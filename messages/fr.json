@@ -1,9 +1,15 @@
 {
     "Hero": {
-        "title": "Bienvenue sur notre site web",
-        "subTitle": "Nous sommes ravis de vous voir ici"
+        "title": "Apporter les soins de santé plus près de chaque village",
+        "subtitle": "Propulsée par le suivi des maladies grâce à l’IA, notre plateforme prévoit la demande en médicaments, maintient les pharmacies approvisionnées en médicaments essentiels, permet les consultations vidéo et garantit aux familles rurales un traitement rapide sans fardeau financier ni de déplacement.",
+        "BtnText": "Commencer"
     },
-    "HomePage": {
-        "welcomeMessage": "Découvrez nos fonctionnalités et services"
+    "Header": {
+        "BtnText": "Se connecter",
+        "home": "Accueil",
+        "about": "À propos",
+        "services": "Services",
+        "contact": "Contact"
     }
+    
 }
