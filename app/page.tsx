@@ -1,12 +1,5 @@
-import Hero from '@/components/Hero/Hero'
-import React from 'react'
+import { redirect } from 'next/navigation';
 
-const page = () => {
-  return (
-    <main>
-      <Hero />
-    </main>
-  )
+export default function RootPage() {
+  redirect('/en');
 }
-
-export default page
