@@ -1,9 +1,14 @@
 {
     "Hero": {
-        "title": "Welcome to our website",
-        "subTitle": "We're glad to have you here"
+        "title": "Bringing Healthcare Closer to Every Village",
+        "subtitle": "Powered by AI-driven disease tracking, our platform predicts medicine demand, keeps pharmacies stocked with essential drugs, enables video consultations, and ensures rural families get timely treatment without financial or travel burdens.",
+        "BtnText": "Get Started"
     },
-    "HomePage": {
-        "welcomeMessage": "Explore ours features and services"
+    "Header": {
+        "BtnText": "Sign In",
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "contact": "Contact"
     }
 }

@@ -32,8 +32,7 @@ export default function LanguageSwitch() {
     ]
 
     return (
-        <div className="flex items-center gap-2 px-20">
-            <Languages className='text-muted-foreground' />
+        <div className="flex items-center gap-2">
             <Select value={locale} onValueChange={handleChange}>
                 <SelectTrigger className="w-[130px]">
                     <SelectValue placeholder="Language" />
@@ -48,6 +47,7 @@ export default function LanguageSwitch() {
                     </SelectGroup>
                 </SelectContent>
             </Select>
+            <Languages />
         </div>
     );
 }
