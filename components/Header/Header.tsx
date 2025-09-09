@@ -131,6 +131,7 @@ const Header = () => {
                 <div className="mt-6 flex flex-col gap-4">
                   <Button variant="outline">Sign in</Button>
                   <LanguageSwitch />
+                  <ThemeSwitch />
                 </div>
               </div>
             </SheetContent>
