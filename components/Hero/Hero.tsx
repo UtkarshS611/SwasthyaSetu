@@ -4,17 +4,18 @@ import { useTranslations } from 'next-intl'
 import { Button } from '../ui/button';
 
 import Header from '../Header/Header';
+import Image from 'next/image';
 
 const Hero = () => {
   const t = useTranslations('Hero');
 
   return (
-    <section className='px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56'>
+    <section className='px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 relative'>
+      <div className='absolute left-0 top-0 w-full h-full hero-gradient -z-1' />
       <Header />
-      <div className='py-48'>
-        <div className='absolute left-0 top-0 w-full h-full bg-red-200 hero-gradient -z-1' />
+      <div className='py-36 lg:py-48 relative flex hero-animation'>
         <div className='flex flex-col gap-8 max-w-xl w-full'>
-          <h1 className='font-bold text-5xl lg:text-6xl xl:text-7xl leading-18'>
+          <h1 className='font-bold text-5xl lg:text-6xl xl:text-7xl leading-15 lg:leading-18'>
             {t('title')}
           </h1>
           <p className='text-muted-foreground'>
@@ -25,6 +26,18 @@ const Hero = () => {
               {t('BtnText')}
             </Button>
           </div>
+        </div>
+        <div className='absolute top-0 -right-2/5 -translate-x-1/2'>
+          <div
+          className='absolute h-full w-full top-0 left-0 bg-linear-to-b from-transparent from-80% to-white dark:to-[#0a0a0a]' />
+          <Image
+            className='heroImage 2xl:block hidden'
+            priority
+            src="/hero/heroImage.svg"
+            alt="Hero Image"
+            width={750}
+            height={400}
+          />
         </div>
       </div>
     </section>
