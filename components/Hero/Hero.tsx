@@ -33,7 +33,7 @@ const Hero = () => {
           <Image
             className='heroImage 2xl:block hidden'
             priority
-            src="/hero/heroImage.svg"
+            src="/hero/heroImage.png"
             alt="Hero Image"
             width={750}
             height={400}
