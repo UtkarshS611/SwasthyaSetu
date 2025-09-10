@@ -25,7 +25,7 @@ const Header = () => {
   const t = useTranslations('Header');
 
   return (
-    <section className="py-4 header-animation px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 absolute top-0 left-0 w-full z-99">
+    <section className="py-4 header-animation px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56">
       <div className="w-full">
         <nav className="flex items-center justify-between relative">
           <TransitionLink
