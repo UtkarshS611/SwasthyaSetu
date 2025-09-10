@@ -13,7 +13,7 @@ interface Message {
     isBot: boolean;
 }
 
-const page = () => {
+const Page = () => {
 
     const [messages, setMessages] = useState<Message[]>([
         {
@@ -95,4 +95,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
