@@ -5,7 +5,7 @@ import { Loader2 } from 'lucide-react'
 
 import { getGeminiResponse } from '@/lib/gemini'
 
-const page = () => {
+const Page = () => {
     const [symptoms, setSymptoms] = useState('');
     const [analysis, setAnalysis] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -71,4 +71,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
