@@ -24,6 +24,7 @@ import {
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
 import { useTranslations } from "next-intl";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
+import TransitionLink from "../TransitionLink/TransitionLink";
 
 const Header = () => {
 
@@ -33,7 +34,7 @@ const Header = () => {
     <section className="py-4 header-animation">
       <div className="container">
         <nav className="flex items-center justify-between relative">
-          <Link
+          <TransitionLink
             href="/"
             className="flex items-center gap-2"
           >
@@ -46,39 +47,43 @@ const Header = () => {
             <span className="text-lg font-semibold tracking-tighter">
               Swasthya Setu
             </span>
-          </Link>
+          </TransitionLink>
           <NavigationMenu className="hidden lg:block absolute left-1/2 -translate-x-1/2">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/"
                   className={navigationMenuTriggerStyle()}
                 >
-                  {t('home')}
+                  <TransitionLink href="/">
+                    {t('home')}
+                  </TransitionLink>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/about"
                   className={navigationMenuTriggerStyle()}
                 >
-                  {t('about')}
+                  <TransitionLink href="/about">
+                    {t('about')}
+                  </TransitionLink>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/services"
                   className={navigationMenuTriggerStyle()}
                 >
-                  {t('services')}
+                  <TransitionLink href="/services">
+                    {t('services')}
+                  </TransitionLink>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="/"
                   className={navigationMenuTriggerStyle()}
                 >
-                  {t('contact')}
+                  <TransitionLink href="/contact">
+                    {t('contact')}
+                  </TransitionLink>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -97,7 +102,7 @@ const Header = () => {
             <SheetContent side="top" className="max-h-screen overflow-auto">
               <SheetHeader>
                 <SheetTitle>
-                  <Link
+                  <TransitionLink
                     href="/"
                     className="flex items-center gap-2"
                   >
@@ -110,23 +115,23 @@ const Header = () => {
                     <span className="text-lg font-semibold tracking-tighter">
                       Swasthya Setu
                     </span>
-                  </Link>
+                  </TransitionLink>
                 </SheetTitle>
               </SheetHeader>
               <div className="flex flex-col p-4">
                 <div className="flex flex-col gap-6">
-                  <Link href="/" className="font-medium">
+                  <TransitionLink href="/" className="font-medium">
                     {t('home')}
-                  </Link>
-                  <Link href="/about" className="font-medium">
+                  </TransitionLink>
+                  <TransitionLink href="/about" className="font-medium">
                     {t('about')}
-                  </Link>
-                  <Link href="/services" className="font-medium">
+                  </TransitionLink>
+                  <TransitionLink href="/services" className="font-medium">
                     {t('services')}
-                  </Link>
-                  <Link href="/contact" className="font-medium">
+                  </TransitionLink>
+                  <TransitionLink href="/contact" className="font-medium">
                     {t('contact')}
-                  </Link>
+                  </TransitionLink>
                 </div>
                 <div className="mt-6 flex flex-col gap-4">
                   <Button variant="outline">Sign in</Button>
