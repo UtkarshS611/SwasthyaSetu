@@ -52,7 +52,7 @@ const Page = () => {
     };
 
     return (
-        <section className="w-full px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 py-24">
+        <section className="w-full px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 py-24 ">
             <div className='space-y-4 py-4 text-center lg:text-start'>
                 <h1 className='text-4xl lg:text-6xl font-semibold flex flex-col'>
                     <span>
