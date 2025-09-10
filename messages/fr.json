@@ -1,15 +1,26 @@
 {
-    "Hero": {
-        "title": "Apporter les soins de santé plus près de chaque village",
-        "subtitle": "Propulsée par le suivi des maladies grâce à l’IA, notre plateforme prévoit la demande en médicaments, maintient les pharmacies approvisionnées en médicaments essentiels, permet les consultations vidéo et garantit aux familles rurales un traitement rapide sans fardeau financier ni de déplacement.",
-        "BtnText": "Commencer"
-    },
-    "Header": {
-        "BtnText": "Se connecter",
-        "home": "Accueil",
-        "about": "À propos",
-        "services": "Services",
-        "contact": "Contact"
-    }
-    
+  "Hero": {
+    "title": "Apporter les soins de santé plus près de chaque village",
+    "subtitle": "Propulsée par le suivi des maladies grâce à l’IA, notre plateforme prévoit la demande en médicaments, maintient les pharmacies approvisionnées en médicaments essentiels, permet les consultations vidéo et garantit aux familles rurales un traitement rapide sans fardeau financier ni de déplacement.",
+    "BtnText": "Commencer"
+  },
+  "SymptomAnalysis": {
+    "titleOne": "Vous avez des problèmes avec des symptômes inconnus ?",
+    "titleTwo": "Laissez l’IA s’en occuper.",
+    "subtitle": "Comprenez rapidement vos symptômes grâce à notre outil d’analyse alimenté par l’IA, basé sur Gemini. Il vous suffit d’entrer vos informations pour obtenir des résultats fiables et fondés sur les données, afin de guider vos prochaines étapes. Notre système vous aide à identifier rapidement d’éventuelles conditions, facilitant de meilleures décisions pour votre santé et garantissant une prise en charge médicale en temps opportun.",
+    "formtitle": "Analyse des symptômes",
+    "formSubtitle": "Veuillez décrire vos problèmes avec précision."
+  },
+  "ChatWithAi": {
+    "titleOne": "Un problème médical vous inquiète ?",
+    "titleTwo": "Laissez l’IA s’en occuper.",
+    "subtitle": "Discutez immédiatement de vos préoccupations de santé avec notre assistant médical basé sur l’IA. Obtenez des informations personnalisées et fiables sur vos symptômes, les conditions possibles et les recommandations de soins — dans votre langue. Bien que cela ne remplace pas un médecin, cet outil vous donne les connaissances nécessaires pour prendre de meilleures décisions et vous orienter vers le bon soutien médical lorsque cela est nécessaire."
+  },
+  "Header": {
+    "BtnText": "Se connecter",
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact"
+  }
 }

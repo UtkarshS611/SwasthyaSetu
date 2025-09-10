@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { getGeminiResponse } from '@/lib/gemini'
 
 import { Loader2 } from 'lucide-react'
@@ -13,6 +13,7 @@ const Page = () => {
     const [analysis, setAnalysis] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const locale = useLocale();
+    const t = useTranslations("SymptomAnalysis")
 
     const localeMap: Record<string, string> = {
         en: "english",
@@ -43,20 +44,20 @@ const Page = () => {
             <div className='space-y-4 py-4 text-center lg:text-start'>
                 <h1 className='text-4xl lg:text-6xl font-semibold flex flex-col'>
                     <span>
-                        Having Trouble With Unknown Symptoms?
+                        {t('titleOne')}
                     </span>
                     <span>
-                        Let AI Handle It.
+                        {t('titleTwo')}
                     </span>
                 </h1>
                 <p className='text-sm'>
-                    Quickly understand your symptoms with our AI-powered analysis tool, powered by Gemini. Simply enter your details, and get reliable, data-driven insights to guide your next steps. Our system helps you identify possible conditions early, supporting better decisions for your health and ensuring timely medical attention when needed.
+                    {t('subtitle')}
                 </p>
             </div>
             <div className="rounded-2xl px-4 py-6 shadow-lg w-full bg-background">
                 <div className='mb-4'>
-                    <h2 className="text-2xl font-semibold">Symptom Analysis</h2>
-                    <p className='text-muted-foreground'>Kindly be precise about your problems.</p>
+                    <h2 className="text-2xl font-semibold">{t('formtitle')}</h2>
+                    <p className='text-muted-foreground'>{t('subtitle')}</p>
                 </div>
                 <div className="mb-4">
                     <textarea

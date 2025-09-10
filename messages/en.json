@@ -1,14 +1,26 @@
 {
-    "Hero": {
-        "title": "Bringing Healthcare Closer to Every Village",
-        "subtitle": "Powered by AI-driven disease tracking, our platform predicts medicine demand, keeps pharmacies stocked with essential drugs, enables video consultations, and ensures rural families get timely treatment without financial or travel burdens.",
-        "BtnText": "Get Started"
-    },
-    "Header": {
-        "BtnText": "Sign In",
-        "home": "Home",
-        "about": "About Us",
-        "services": "Services",
-        "contact": "Contact"
-    }
+  "Hero": {
+    "title": "Bringing Healthcare Closer to Every Village",
+    "subtitle": "Powered by AI-driven disease tracking, our platform predicts medicine demand, keeps pharmacies stocked with essential drugs, enables video consultations, and ensures rural families get timely treatment without financial or travel burdens.",
+    "BtnText": "Get Started"
+  },
+  "SymptomAnalysis": {
+    "titleOne": "Having Trouble With Unknown Symptoms?",
+    "titleTwo": "Let AI Handle It.",
+    "subtitle": "Quickly understand your symptoms with our AI-powered analysis tool, powered by Gemini. Simply enter your details, and get reliable, data-driven insights to guide your next steps. Our system helps you identify possible conditions early, supporting better decisions for your health and ensuring timely medical attention when needed.",
+    "formtitle": "Symptom Analysis",
+    "formSubtitle": "Kindly be precise about your problems."
+  },
+  "ChatWithAi": {
+    "titleOne": "Something Bothering You Medically?",
+    "titleTwo": "Let AI Handle It.",
+    "subtitle": "Discuss your health concerns instantly with our AI-driven medical assistant. Get personalized, reliable insights into symptoms, possible conditions, and care recommendations—all in your language. While not a replacement for doctors, this tool empowers you with knowledge, enabling better decisions and guiding you toward the right medical support when needed."
+  },
+  "Header": {
+    "BtnText": "Sign In",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact"
+  }
 }
