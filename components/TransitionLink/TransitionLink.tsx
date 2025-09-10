@@ -1,8 +1,10 @@
 'use client';
+import { ReactNode, MouseEvent } from 'react';
+import Link from 'next/link';
 
 import { useRouter, usePathname } from 'next/navigation';
+
 import { useLocale } from 'next-intl';
-import { ReactNode, MouseEvent } from 'react';
 
 interface TransitionLinkProps {
     href: string;
@@ -31,19 +33,17 @@ const TransitionLink = ({
             ? `/${locale}${href}`
             : `/${locale}/${href}`;
 
-        setTimeout(() => {
-            router.push(localizedPath);
-        }, 200);
+        router.push(localizedPath);
     };
 
     return (
-        <a
+        <Link
             href={`/${locale}${href}`}
             onClick={handleClick}
             className={className}
         >
             {children}
-        </a>
+        </Link>
     );
 }
 
