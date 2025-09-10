@@ -11,7 +11,6 @@ const Hero = () => {
 
   return (
     <section className='px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 relative'>
-      What
       <div className='absolute left-0 top-0 w-full h-full hero-gradient -z-1' />
       <Header />
       <div className='py-36 lg:py-48 relative flex hero-animation'>
@@ -30,7 +29,7 @@ const Hero = () => {
         </div>
         <div className='absolute top-0 -right-2/5 -translate-x-1/2'>
           <div
-          className='absolute h-full w-full top-0 left-0 bg-linear-to-b from-transparent from-80% to-white dark:to-[#0a0a0a]' />
+            className='absolute h-full w-full top-0 left-0 bg-linear-to-b from-transparent from-80% to-white dark:to-[#0a0a0a]' />
           <Image
             className='heroImage 2xl:block hidden'
             priority
