@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from 'react'
+import React, { useState, useTransition } from 'react'
 
 import { getGeminiResponse } from '../../../../lib/gemini';
 
 import { ChatInput } from '@/components/ChatInput/ChatInput';
 import { ChatMessage } from '@/components/ChatMessage/ChatMessage';
+import { useTranslations } from 'next-intl';
 
 interface Message {
     id: number;
@@ -15,6 +16,7 @@ interface Message {
 
 const Page = () => {
 
+    const t = useTranslations("ChatWithAi");
     const [messages, setMessages] = useState<Message[]>([
         {
             id: 1,
@@ -56,14 +58,14 @@ const Page = () => {
             <div className='space-y-4 py-4 text-center lg:text-start'>
                 <h1 className='text-4xl lg:text-6xl font-semibold flex flex-col'>
                     <span>
-                        Something Bothering You Medically?
+                        {t('titleOne')}
                     </span>
                     <span>
-                        Let AI Handle It.
+                        {t('titleTwo')}
                     </span>
                 </h1>
                 <p className='text-sm'>
-                    Discuss your health concerns instantly with our AI-driven medical assistant. Get personalized, reliable insights into symptoms, possible conditions, and care recommendations—all in your language. While not a replacement for doctors, this tool empowers you with knowledge, enabling better decisions and guiding you toward the right medical support when needed.
+                    {t('subtitle')}
                 </p>
             </div>
             <div className="rounded-2xl shadow-lg bg-background dark:border-[2px] dark:border-border">
