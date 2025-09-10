@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import './globals.css';
 import { ThemeProvider } from '@/components/Theme-provider/ThemeProvider';
+import Header from '@/components/Header/Header';
 
 export const metadata: Metadata = {
   title: 'Next.js i18n App',
@@ -29,7 +30,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body>
+      <body className='relative'>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
             attribute="class"
@@ -37,6 +38,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             enableSystem
             disableTransitionOnChange
           >
+            <Header />
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>

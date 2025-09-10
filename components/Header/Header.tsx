@@ -1,18 +1,10 @@
 "use client";
-import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import { MenuIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
 
 import {
   Sheet,
@@ -21,9 +13,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+
 import LanguageSwitch from "../LanguageSwitch/LanguageSwitch";
-import { useTranslations } from "next-intl";
+
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
+
 import TransitionLink from "../TransitionLink/TransitionLink";
 
 const Header = () => {
@@ -31,8 +25,8 @@ const Header = () => {
   const t = useTranslations('Header');
 
   return (
-    <section className="py-4 header-animation">
-      <div className="container">
+    <section className="py-4 header-animation px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 absolute top-0 left-0 w-full z-99">
+      <div className="w-full">
         <nav className="flex items-center justify-between relative">
           <TransitionLink
             href="/"
@@ -48,46 +42,28 @@ const Header = () => {
               Swasthya Setu
             </span>
           </TransitionLink>
-          <NavigationMenu className="hidden lg:block absolute left-1/2 -translate-x-1/2">
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <TransitionLink href="/">
-                    {t('home')}
-                  </TransitionLink>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <TransitionLink href="/about">
-                    {t('about')}
-                  </TransitionLink>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <TransitionLink href="/services">
-                    {t('services')}
-                  </TransitionLink>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink
-                  className={navigationMenuTriggerStyle()}
-                >
-                  <TransitionLink href="/contact">
-                    {t('contact')}
-                  </TransitionLink>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            </NavigationMenuList>
-          </NavigationMenu>
+          <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 max-w-max space-x-2">
+            <Button variant={"ghost"}>
+              <TransitionLink href="/">
+                {t('home')}
+              </TransitionLink>
+            </Button>
+            <Button variant={"ghost"}>
+              <TransitionLink href="/about">
+                {t('about')}
+              </TransitionLink>
+            </Button>
+            <Button variant={"ghost"}>
+              <TransitionLink href="/services">
+                {t('services')}
+              </TransitionLink>
+            </Button>
+            <Button variant={"ghost"}>
+              <TransitionLink href="/contact">
+                {t('contact')}
+              </TransitionLink>
+            </Button>
+          </div>
           <div className="hidden items-center gap-4 lg:flex">
             <ThemeSwitch />
             <Button variant="outline">Sign in</Button>
