@@ -39,6 +39,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             disableTransitionOnChange
           >
             <Header />
+            <div className='absolute left-0 top-0 w-full h-screen hero-gradient -z-1' />
             {children}
           </ThemeProvider>
         </NextIntlClientProvider>

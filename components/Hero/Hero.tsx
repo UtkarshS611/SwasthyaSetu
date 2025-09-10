@@ -11,7 +11,6 @@ const Hero = () => {
 
   return (
     <section className='px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 relative'>
-      <div className='absolute left-0 top-0 w-full h-full hero-gradient -z-1' />
       <div className='py-40 lg:py-64 relative flex hero-animation'>
         <div className='flex flex-col gap-8 max-w-xl w-full'>
           <h1 className='font-bold text-5xl lg:text-6xl xl:text-7xl leading-15 lg:leading-18'>
@@ -26,7 +25,7 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className='absolute top-1/2 -translate-y-1/2 -right-2/5 -translate-x-1/2'>
+        <div className='absolute top-0 -right-2/5 -translate-x-1/2'>
           <div
             className='absolute h-full w-full top-0 left-0 bg-linear-to-b from-transparent from-80% to-white dark:to-[#0a0a0a]' />
           <Image

@@ -1,21 +1,31 @@
 "use client"
 
 import React, { useState } from 'react'
+import { useLocale } from 'next-intl';
+import { getGeminiResponse } from '@/lib/gemini'
+
 import { Loader2 } from 'lucide-react'
 
-import { getGeminiResponse } from '@/lib/gemini'
+import { Button } from '@/components/ui/button'
 
 const Page = () => {
     const [symptoms, setSymptoms] = useState('');
     const [analysis, setAnalysis] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const locale = useLocale();
+
+    const localeMap: Record<string, string> = {
+        en: "english",
+        fr: "french",
+        hi: "hindi",
+    };
 
     const handleAnalyze = async () => {
         if (!symptoms.trim()) return;
 
         setIsLoading(true);
         try {
-            const prompt = `As a medical AI assistant, please analyze these symptoms and provide potential causes, recommended actions, and whether immediate medical attention might be needed. Format the response in clear sections without markdown symbols. Symptoms: ${symptoms}`;
+            const prompt = `As a medical AI assistant, please analyze these symptoms and provide potential causes, recommended actions, and whether immediate medical attention might be needed. Format the response in clear sections without markdown symbols. Symptoms: ${symptoms} in ${localeMap[locale]}`;
             const response = await getGeminiResponse(prompt);
             const formattedResponse = response.replace(/\*\*/g, '').trim();
             setAnalysis(formattedResponse);
@@ -27,14 +37,28 @@ const Page = () => {
         }
     };
 
+
     return (
-        <div className="w-full grid mt-[56px] place-items-center">
-            <div className="rounded-2xl px-4 py-6 shadow-lg mb-4 w-full lg:ml-8">
-                <h2 className="text-2xl font-semibold mb-4">Symptom Checker</h2>
+        <section className="w-full px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 py-24 lg:py-40">
+            <div className='space-y-4 py-4 text-center lg:text-start'>
+                <h1 className='text-4xl lg:text-6xl font-semibold flex flex-col'>
+                    <span>
+                        Having Trouble With Unknown Symptoms?
+                    </span>
+                    <span>
+                        Let AI Handle It.
+                    </span>
+                </h1>
+                <p className='text-sm'>
+                    Quickly understand your symptoms with our AI-powered analysis tool, powered by Gemini. Simply enter your details, and get reliable, data-driven insights to guide your next steps. Our system helps you identify possible conditions early, supporting better decisions for your health and ensuring timely medical attention when needed.
+                </p>
+            </div>
+            <div className="rounded-2xl px-4 py-6 shadow-lg w-full bg-background">
+                <div className='mb-4'>
+                    <h2 className="text-2xl font-semibold">Symptom Analysis</h2>
+                    <p className='text-muted-foreground'>Kindly be precise about your problems.</p>
+                </div>
                 <div className="mb-4">
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Describe your symptoms
-                    </label>
                     <textarea
                         value={symptoms}
                         onChange={(e) => setSymptoms(e.target.value)}
@@ -42,10 +66,10 @@ const Page = () => {
                         placeholder="Enter your symptoms here..."
                     />
                 </div>
-                <button
+                <Button
                     onClick={handleAnalyze}
                     disabled={!symptoms.trim() || isLoading}
-                    className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                    className="w-full"
                 >
                     {isLoading ? (
                         <>
@@ -55,7 +79,7 @@ const Page = () => {
                     ) : (
                         'Analyze Symptoms'
                     )}
-                </button>
+                </Button>
                 {analysis && (
                     <div className="mt-6">
                         <h3 className="text-lg font-medium mb-2">Analysis Results</h3>
@@ -67,7 +91,7 @@ const Page = () => {
                     </div>
                 )}
             </div>
-        </div>
+        </section>
     )
 }
 
