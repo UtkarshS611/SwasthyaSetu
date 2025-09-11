@@ -59,7 +59,7 @@ const JoinRoom = () => {
                     </div>
                     <input
                         id="roomId"
-                        type="number"
+                        type="text"
                         placeholder="Enter room ID"
                         value={roomId}
                         onChange={(e) => setRoomId(e.target.value)}
