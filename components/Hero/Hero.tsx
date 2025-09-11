@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl'
 
 import { Button } from '../ui/button';
+import JoinRoom from '../JoinRoom/JoinRoom';
 
 
 const Hero = () => {
@@ -38,6 +39,7 @@ const Hero = () => {
           />
         </div>
       </div>
+      <JoinRoom />
     </section>
   )
 }
