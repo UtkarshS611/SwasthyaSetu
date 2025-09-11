@@ -19,8 +19,7 @@
   "Header": {
     "BtnText": "Sign In",
     "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "contact": "Contact"
+    "chat": "Chat With AI",
+    "symptoms": "Symptom Check"
   }
 }
