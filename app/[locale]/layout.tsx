@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing';
 import './globals.css';
 import { ThemeProvider } from '@/components/Theme-provider/ThemeProvider';
 import Header from '@/components/Header/Header';
+import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
   title: 'Next.js i18n App',
@@ -41,6 +42,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Header />
             <div className='absolute left-0 top-0 w-full h-screen hero-gradient -z-1' />
             {children}
+            <Toaster richColors theme="light" position="top-center" />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
