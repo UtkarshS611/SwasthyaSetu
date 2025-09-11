@@ -22,5 +22,53 @@
     "about": "À propos",
     "services": "Services",
     "contact": "Contact"
+  },
+  
+  
+  "Survey": {
+    "Step1": {
+      "title": "Informations de base",
+      "name": "Quel est votre nom complet?",
+      "age": "Quel âge avez-vous?",
+      "gender": "Quel est votre sexe?",
+      "weight": "Quel est votre poids (en kg)?",
+      "height": "Quelle est votre taille (en cm)?"
+    },
+    "Step2": {
+      "title": "Mode de vie",
+      "diet": "Décrivez votre régime alimentaire typique (par ex. végétarien, équilibré, etc.).",
+      "smoking": "Fumez-vous?",
+      "alcohol": "Consommez-vous de l'alcool?",
+      "exercise": "Décrivez votre routine d'exercice."
+    },
+    "Step3": {
+      "title": "Antécédents médicaux",
+      "chronic": "Avez-vous des maladies chroniques? Si oui, veuillez préciser.",
+      "medications": "Prenez-vous actuellement des médicaments?",
+      "allergies": "Avez-vous des allergies connues?"
+    },
+    "Step4": {
+      "title": "Santé générale",
+      "sleep": "Comment décririez-vous la qualité de votre sommeil ou vos heures par nuit?",
+      "energy": "Comment sont vos niveaux d'énergie tout au long de la journée?",
+      "digestion": "Éprouvez-vous des problèmes de digestion? (par ex. ballonnements, acidité)"
+    },
+    "Step5": {
+      "title": "Symptômes",
+      "symptoms": "Veuillez décrire les symptômes que vous ressentez actuellement."
+    },
+    "Step6": {
+      "title": "Signes vitaux",
+      "bp": "Pression artérielle (ex: 120/80)",
+      "pulse": "Fréquence du pouls (bpm)",
+      "temp": "Température corporelle (°C)"
+    },
+    "Step7": {
+      "title": "Examen",
+      "reviewNote": "Veuillez vérifier attentivement toutes les informations avant de les soumettre."
+    }
   }
+
+
+
 }
