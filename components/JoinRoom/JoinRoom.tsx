@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Video, Users, UserPlus } from "lucide-react";
+import { Video, Users } from "lucide-react";
 import { useLocale } from "next-intl";
 
 

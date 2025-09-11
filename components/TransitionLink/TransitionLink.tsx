@@ -21,7 +21,6 @@ const TransitionLink = ({
 }: TransitionLinkProps) => {
     const router = useRouter();
     const locale = useLocale();
-    const pathname = usePathname();
 
     const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();

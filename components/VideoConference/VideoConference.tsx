@@ -11,7 +11,7 @@ interface Props {
 
 const VideoConference = ({ roomId }: Props) => {
 
-    const zegoRef = useRef<any>(null);
+    const zegoRef = useRef<ZegoUIKitPrebuilt | null>(null);
     const containerRef = useRef<HTMLDivElement>(null);
 
     const searchParams = useSearchParams();
