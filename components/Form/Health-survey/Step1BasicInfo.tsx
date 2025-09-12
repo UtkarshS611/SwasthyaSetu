@@ -3,10 +3,9 @@
 import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Label } from "@/components/ui/label";
-import type { HealthSurveyFormData } from "./HealthSurvey";
-
 import { Input } from "@/components/ui/input";
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select";
+import type { HealthSurveyFormData } from "./HealthSurvey";
 
 type Props = {
   formData: HealthSurveyFormData;

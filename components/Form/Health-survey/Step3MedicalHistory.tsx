@@ -4,8 +4,8 @@ import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
-import type { HealthSurveyFormData } from "./HealthSurvey";
 
+import type { HealthSurveyFormData } from "./HealthSurvey";
 
 type Props = {
   formData: HealthSurveyFormData;
