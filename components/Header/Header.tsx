@@ -63,6 +63,11 @@ const Header = () => {
                 {t('video')}
               </TransitionLink>
             </Button>
+             <Button variant={"ghost"}>
+              <TransitionLink href="/survey">
+                {t('survey')}
+              </TransitionLink>
+            </Button>
           </div>
           <div className="hidden items-center gap-4 lg:flex">
             <ThemeSwitch />
