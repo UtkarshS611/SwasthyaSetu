@@ -16,6 +16,23 @@
     "titleTwo": "Laissez l’IA s’en occuper.",
     "subtitle": "Discutez immédiatement de vos préoccupations de santé avec notre assistant médical basé sur l’IA. Obtenez des informations personnalisées et fiables sur vos symptômes, les conditions possibles et les recommandations de soins — dans votre langue. Bien que cela ne remplace pas un médecin, cet outil vous donne les connaissances nécessaires pour prendre de meilleures décisions et vous orienter vers le bon soutien médical lorsque cela est nécessaire."
   },
+  "Benefits": {
+    "titleOne": "Pourquoi nous choisir ?",
+    "titleTwo": "Découvrez une grande variété de fonctionnalités.",
+    "subtitle": "Découvrez le meilleur grâce à nos services d’assistance médicale pilotés par l’IA de premier niveau.",
+    "benefit1": {
+      "title": "Planification de réunions et visioconférence par IA.",
+      "subtitle": "Planifiez et gérez vos réunions en toute simplicité grâce aux suggestions de l’IA et aux ajustements automatiques des fuseaux horaires, le tout dans vos langues natives."
+    },
+    "benefit2": {
+      "title": "Analyse des symptômes avec recommandations de médicaments, horaires et posologie.",
+      "subtitle": "Obtenez une analyse précise des symptômes et des recommandations personnalisées de médicaments avec posologie et horaires, le tout en un seul endroit, grâce à des algorithmes IA avancés."
+    },
+    "benefit3": {
+      "title": "Assistant IA contextuel",
+      "subtitle": "Interagissez avec notre Assistant IA pour des réponses instantanées à vos questions médicales, des conseils de santé personnalisés et un support multilingue."
+    }
+  },  
   "Header": {
     "BtnText": "Se connecter",
     "home": "Accueil",

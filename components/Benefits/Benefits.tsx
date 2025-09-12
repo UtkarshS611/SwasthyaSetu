@@ -4,6 +4,7 @@ import { ArrowUp, CalendarCheck, Globe, Play, Plus, Signature, Sparkles, Target 
 
 import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+import { useTranslations } from 'next-intl'
 
 const MESCHAC_AVATAR = 'https://avatars.githubusercontent.com/u/47919550?v=4'
 const BERNARD_AVATAR = 'https://avatars.githubusercontent.com/u/31113941?v=4'
@@ -11,6 +12,9 @@ const THEO_AVATAR = 'https://avatars.githubusercontent.com/u/68236786?v=4'
 const GLODIE_AVATAR = 'https://avatars.githubusercontent.com/u/99137927?v=4'
 
 const Benefits = () => {
+
+    const t = useTranslations('Benefits')
+
     return (
         <section>
             <div className="px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56">
@@ -18,23 +22,25 @@ const Benefits = () => {
                     <div className='space-y-4 py-4 text-center lg:text-start'>
                         <h1 className='text-4xl lg:text-6xl font-semibold flex flex-col'>
                             <span>
-                                Why Choose Us?
+                                {t('titleOne')}
                             </span>
                             <span>
-                                Discover wide variety of features.
+                                {t('titleTwo')}
                             </span>
                         </h1>
                         <p className='text-sm'>
-                            Experience the best with our top-notch AI driven medical support services.
+                            {t('subtitle')}
                         </p>
                     </div>
                     <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                         <Card
                             className="overflow-hidden p-6">
                             <Target className="text-primary size-5" />
-                            <h3 className="text-foreground mt-5 text-lg font-semibold">AI Meeting Scheduling and Video conference.</h3>
+                            <h3 className="text-foreground mt-5 text-lg font-semibold">
+                                {t('benefit1.title')}
+                            </h3>
                             <p className="text-muted-foreground mt-3 text-balance">
-                                Seamlessly schedule and manage meetings with AI-powered suggestions and automatic time zone adjustments all in your native languages.
+                                {t('benefit1.subtitle')}
                             </p>
                             <MeetingIllustration />
                         </Card>
@@ -43,10 +49,10 @@ const Benefits = () => {
                             className="group overflow-hidden px-6 pt-6">
                             <CalendarCheck className="text-primary size-5" />
                             <h3 className="text-foreground mt-5 text-lg font-semibold">
-                                Symptom Analysis along with medicince recommendation with timings and dosage.
+                                {t('benefit2.title')}
                             </h3>
                             <p className="text-muted-foreground mt-3 text-balance">
-                                Get accurate symptom analysis and personalized medicine recommendations with dosage and timing, powered by advanced AI algorithms all the one place.
+                                {t('benefit2.subtitle')}
                             </p>
 
                             <CodeReviewIllustration />
@@ -54,9 +60,11 @@ const Benefits = () => {
                         <Card
                             className="group overflow-hidden px-6 pt-6">
                             <Sparkles className="text-primary size-5" />
-                            <h3 className="text-foreground mt-5 text-lg font-semibold">Contextual AI Assistant</h3>
+                            <h3 className="text-foreground mt-5 text-lg font-semibold">
+                                {t('benefit3.title')}
+                            </h3>
                             <p className="text-muted-foreground mt-3 text-balance">
-                                Interact with our AI Assistant for instant answers to your medical queries, personalized health advice, and support in multiple languages.
+                                {t('benefit3.subtitle')}
                             </p>
 
                             <div className="mask-b-from-50 -mx-2 -mt-2 px-2 pt-2">

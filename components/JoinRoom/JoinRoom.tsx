@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { Video, Users } from "lucide-react";
 import { useLocale } from "next-intl";
 
-
 const JoinRoom = () => {
 
     const router = useRouter();

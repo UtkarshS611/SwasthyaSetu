@@ -11,7 +11,7 @@ export default function HomePage() {
         <main>
             <Hero />
             <Benefits />
-            <Features />
+            {/* <Features /> */}
             <Faqs />
         </main>
     );
