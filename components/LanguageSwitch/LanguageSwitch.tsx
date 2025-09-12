@@ -28,6 +28,8 @@ export default function LanguageSwitch() {
         // add more languages later
         { code: 'en', label: 'English' },
         { code: 'hi', label: 'Hindi' },
+        { code: 'pu', label: 'Punjabi' },
+        { code: 'ur', label: 'Urdu' },
         { code: 'fr', label: 'French' },
     ]
 

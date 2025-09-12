@@ -38,29 +38,29 @@ const Header = () => {
               width={35}
               alt="Shadcn UI Navbar"
             />
-            <span className="text-lg font-semibold tracking-tighter">
+            <span className="text-lg font-semibold tracking-tighter text-black">
               Swasthya Setu
             </span>
           </TransitionLink>
-          <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 max-w-max space-x-2">
+          <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 max-w-max space-x-2 text-black">
             <Button variant={"ghost"}>
               <TransitionLink href="/">
                 {t('home')}
               </TransitionLink>
             </Button>
             <Button variant={"ghost"}>
-              <TransitionLink href="/about">
-                {t('about')}
+              <TransitionLink href="/chat-with-ai">
+                {t('chat')}
               </TransitionLink>
             </Button>
             <Button variant={"ghost"}>
-              <TransitionLink href="/services">
-                {t('services')}
+              <TransitionLink href="/symptom-analysis">
+                {t('symptoms')}
               </TransitionLink>
             </Button>
             <Button variant={"ghost"}>
-              <TransitionLink href="/contact">
-                {t('contact')}
+              <TransitionLink href="/video-conference">
+                {t('video')}
               </TransitionLink>
             </Button>
           </div>
@@ -99,14 +99,14 @@ const Header = () => {
                   <TransitionLink href="/" className="font-medium">
                     {t('home')}
                   </TransitionLink>
-                  <TransitionLink href="/about" className="font-medium">
-                    {t('about')}
+                  <TransitionLink href="/chat-with-ai">
+                    {t('chat')}
                   </TransitionLink>
-                  <TransitionLink href="/services" className="font-medium">
-                    {t('services')}
+                  <TransitionLink href="/symptom-analysis">
+                    {t('symptoms')}
                   </TransitionLink>
-                  <TransitionLink href="/contact" className="font-medium">
-                    {t('contact')}
+                  <TransitionLink href="/video-conference">
+                    {t('video')}
                   </TransitionLink>
                 </div>
                 <div className="mt-6 flex flex-col gap-4">
