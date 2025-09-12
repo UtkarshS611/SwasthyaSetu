@@ -39,5 +39,54 @@
     "chat": "Chat With AI",
     "symptoms": "Symptom Check",
     "video": "Video Consultation"
+  },
+  
+  
+  "Survey": {
+    "Step1": {
+      "title": "Basic Information",
+      "name": "What is your full name?",
+      "age": "How old are you?",
+      "gender": "What is your gender?",
+      "weight": "What is your weight (in kg)?",
+      "height": "What is your height (in cm)?"
+    },
+    "Step2": {
+      "title": "Lifestyle",
+      "diet": "Describe your typical diet (e.g., vegetarian, balanced, etc.).",
+      "smoking": "Do you smoke?",
+      "alcohol": "Do you consume alcohol?",
+      "exercise": "Describe your exercise routine."
+    },
+    "Step3": {
+      "title": "Medical History",
+      "chronic": "Do you have any chronic conditions? If yes, please specify.",
+      "medications": "Are you currently taking any medications?",
+      "allergies": "Do you have any known allergies?"
+    },
+    "Step4": {
+      "title": "General Health",
+      "sleep": "How would you describe your sleep quality or hours per night?",
+      "energy": "How are your energy levels throughout the day?",
+      "digestion": "Do you experience any digestion issues? (e.g., bloating, acidity)"
+    },
+    "Step5": {
+      "title": "Symptoms",
+      "symptoms": "Please describe any symptoms you are currently experiencing."
+    },
+    "Step6": {
+      "title": "Vitals",
+      "bp": "Blood Pressure (e.g., 120/80)",
+      "pulse": "Pulse Rate (bpm)",
+      "temp": "Body Temperature (°C)"
+    },
+    "Step7": {
+      "title": "Review",
+      "reviewNote": "Please review all the information carefully before submission."
+    }
   }
+
+
+
 }
+
