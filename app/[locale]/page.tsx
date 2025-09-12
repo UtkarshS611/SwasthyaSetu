@@ -4,7 +4,6 @@ import Hero from '@/components/Hero/Hero';
 import Features from '@/components/Features/Features';
 import Benefits from '@/components/Benefits/Benefits';
 import Faqs from '@/components/Faqs/Faqs';
-import Footer from '@/components/Footer/Footer';
 
 export default function HomePage() {
 
@@ -12,9 +11,8 @@ export default function HomePage() {
         <main>
             <Hero />
             <Benefits />
-            <Features />
+            {/* <Features /> */}
             <Faqs />
-            <Footer />
         </main>
     );
 }

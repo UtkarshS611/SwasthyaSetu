@@ -16,6 +16,23 @@
     "titleTwo": "Let AI Handle It.",
     "subtitle": "Discuss your health concerns instantly with our AI-driven medical assistant. Get personalized, reliable insights into symptoms, possible conditions, and care recommendations—all in your language. While not a replacement for doctors, this tool empowers you with knowledge, enabling better decisions and guiding you toward the right medical support when needed."
   },
+  "Benefits": {
+    "titleOne": "Why Choose Us?",
+    "titleTwo": "Discover wide variety of features.",
+    "subtitle": "Experience the best with our top-notch AI driven medical support services.",
+    "benefit1": {
+      "title": "AI Meeting Scheduling and Video conference.",
+      "subtitle": "Seamlessly schedule and manage meetings with AI-powered suggestions and automatic time zone adjustments all in your native languages."
+    },
+    "benefit2": {
+      "title": "Symptom Analysis along with medicince recommendation with timings and dosage.",
+      "subtitle": "Get accurate symptom analysis and personalized medicine recommendations with dosage and timing, powered by advanced AI algorithms all the one place."
+    },
+    "benefit3": {
+      "title": "Contextual AI Assistant",
+      "subtitle": "Interact with our AI Assistant for instant answers to your medical queries, personalized health advice, and support in multiple languages."
+    }
+  },
   "Header": {
     "BtnText": "Sign In",
     "home": "Home",

@@ -7,6 +7,7 @@ import './globals.css';
 import { ThemeProvider } from '@/components/Theme-provider/ThemeProvider';
 import Header from '@/components/Header/Header';
 import { Toaster } from '@/components/ui/sonner';
+import Footer from '@/components/Footer/Footer';
 
 export const metadata: Metadata = {
   title: 'Next.js i18n App',
@@ -42,6 +43,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <Header />
             <div className='absolute left-0 top-0 w-full h-screen hero-gradient -z-1' />
             {children}
+            <Footer />
             <Toaster richColors theme="light" position="top-center" />
           </ThemeProvider>
         </NextIntlClientProvider>
