@@ -29,6 +29,7 @@ export default function LanguageSwitch() {
         { code: 'en', label: 'English' },
         { code: 'hi', label: 'Hindi' },
         { code: 'pu', label: 'Punjabi' },
+        { code: 'ur', label: 'Urdu' },
         { code: 'fr', label: 'French' },
     ]
 
