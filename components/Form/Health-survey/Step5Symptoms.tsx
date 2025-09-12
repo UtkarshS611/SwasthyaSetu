@@ -4,10 +4,12 @@ import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import type { HealthSurveyFormData } from "./HealthSurvey";
+
 
 type Props = {
-  formData: any;
-  setFormData: React.Dispatch<React.SetStateAction<any>>;
+  formData: HealthSurveyFormData;
+  setFormData: React.Dispatch<React.SetStateAction<HealthSurveyFormData>>;
 };
 
 export default function Step5Symptoms({ formData, setFormData }: Props) {

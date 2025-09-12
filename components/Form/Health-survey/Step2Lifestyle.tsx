@@ -5,10 +5,12 @@ import { useTranslations } from "next-intl";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Select, SelectTrigger, SelectContent, SelectItem, SelectValue } from "@/components/ui/select";
+import type { HealthSurveyFormData } from "./HealthSurvey";
+
 
 type Props = {
-  formData: any;
-  setFormData: React.Dispatch<React.SetStateAction<any>>;
+  formData: HealthSurveyFormData;
+  setFormData: React.Dispatch<React.SetStateAction<HealthSurveyFormData>>;
 };
 
 export default function Step2Lifestyle({ formData, setFormData }: Props) {
