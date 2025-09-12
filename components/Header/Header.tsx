@@ -58,6 +58,11 @@ const Header = () => {
                 {t('symptoms')}
               </TransitionLink>
             </Button>
+            <Button variant={"ghost"}>
+              <TransitionLink href="/video-conference">
+                {t('video')}
+              </TransitionLink>
+            </Button>
           </div>
           <div className="hidden items-center gap-4 lg:flex">
             <ThemeSwitch />
@@ -99,6 +104,9 @@ const Header = () => {
                   </TransitionLink>
                   <TransitionLink href="/symptom-analysis">
                     {t('symptoms')}
+                  </TransitionLink>
+                  <TransitionLink href="/video-conference">
+                    {t('video')}
                   </TransitionLink>
                 </div>
                 <div className="mt-6 flex flex-col gap-4">

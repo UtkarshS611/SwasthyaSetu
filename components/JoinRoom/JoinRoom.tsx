@@ -30,7 +30,7 @@ const JoinRoom = () => {
     };
 
     return (
-        <div className="max-w-md w-full mx-auto border-none shadow-none bg-transparent">
+        <div className="max-w-md w-full mx-auto bg-background p-4 rounded-xl border shadow-xl">
             <form onSubmit={handleJoin} className="space-y-6">
                 <div className="space-y-2">
                     <div className="flex items-center space-x-2">
