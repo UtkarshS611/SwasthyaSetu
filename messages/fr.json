@@ -18,10 +18,7 @@
   },
   "Header": {
     "BtnText": "Se connecter",
-    "home": "Accueil",
-    "about": "À propos",
-    "services": "Services",
-    "contact": "Contact"
+    "home": "Accueil"
   },
   
   

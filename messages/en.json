@@ -18,10 +18,7 @@
   },
   "Header": {
     "BtnText": "Sign In",
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "contact": "Contact"
+    "home": "Home"
   },
   
   
