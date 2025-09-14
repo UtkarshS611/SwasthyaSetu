@@ -172,10 +172,19 @@
 }
 
 .hero-gradient {
-  background-image: url("/hero/heroGradient.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f399ff;
+  background-image: radial-gradient(
+      at 86% 31%,
+      hsla(43, 74%, 60%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 38% 69%, hsla(309, 99%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 81% 86%, hsla(53, 86%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 26% 25%, hsla(346, 85%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 11% 9%, hsla(61, 86%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 62% 38%, hsla(24, 76%, 69%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 74%, hsla(354, 81%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 34% 85%, hsla(110, 98%, 70%, 1) 0px, transparent 50%);
   clip-path: polygon(0 0, 100% 0, 100% 30%, 0 65%);
 }
 
