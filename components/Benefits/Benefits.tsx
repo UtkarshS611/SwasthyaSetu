@@ -16,7 +16,7 @@ const Benefits = () => {
     const t = useTranslations('Benefits')
 
     return (
-        <section>
+        <section className='pb-16 lg:pb-24'>
             <div className="px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56">
                 <div className="w-full">
                     <div className='space-y-4 py-4 text-center lg:text-start'>
@@ -108,9 +108,9 @@ const MeetingIllustration = () => {
                                 key={index}
                                 className="bg-background size-7 rounded-full border p-0.5 shadow shadow-zinc-950/5">
                                 <img
-                                    className="aspect-square rounded-full object-cover"
                                     src={avatar.src}
                                     alt={avatar.alt}
+                                    className="aspect-square rounded-full object-cover"
                                     height="460"
                                     width="460"
                                 />

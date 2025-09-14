@@ -41,7 +41,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             disableTransitionOnChange
           >
             <Header />
-            <div className='absolute left-0 top-0 w-full h-screen hero-gradient -z-1' />
+            <div className='absolute left-0 top-0 w-full h-screen hero-gradient -z-1'></div>
             {children}
             <Footer />
             <Toaster richColors theme="light" position="top-center" />
