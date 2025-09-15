@@ -9,7 +9,7 @@ const VideoFeature = () => {
     const MESCHAC_AVATAR = 'https://avatars.githubusercontent.com/u/47919550?v=4'
 
     return (
-        <section className='overflow-hidden relative bg-[#f8f9fa] lg:h-[90vh] rounded-[40px] p-5 lg:p-16 gap-10 flex flex-col lg:flex-row justify-center items-center'>
+        <section className='overflow-hidden relative dark:bg-background bg-base-100 lg:h-[90vh] rounded-[40px] p-5 lg:p-16 gap-10 flex flex-col lg:flex-row justify-center items-center'>
             <div className='space-y-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-start'>
                 <h2 className='font-semibold text-4xl lg:text-5xl'>
                     Introducing Low Bandwidth Consultations
@@ -23,7 +23,7 @@ const VideoFeature = () => {
                     </TransitionLink>
                 </Button>
             </div>
-            <div className="bg-white relative shadow-md rounded-3xl max-w-3xl w-full h-[100vh] lg:h-full p-5 space-y-5 flex flex-col">
+            <div className="bg-white dark:bg-base-900 relative shadow-md rounded-3xl max-w-3xl w-full h-[100vh] lg:h-full p-5 space-y-5 flex flex-col">
                 <div className='items-center absolute hidden lg:flex bottom-0 left-[-27%] z-99'>
                     <span className="text-[#70e000] -rotate-6 font-bold">Try out</span>
                     <AnimateSvg
@@ -50,9 +50,9 @@ const VideoFeature = () => {
                 </div>
 
                 <div className="flex flex-col sm:flex-row justify-between gap-2 flex-1">
-                    <div className="bg-[#f8f9fa] flex-1 rounded-xl p-2 relative flex justify-center items-center">
+                    <div className="bg-base-100 dark:bg-background flex-1 rounded-xl p-2 relative flex justify-center items-center">
                         <div
-                            className='bg-white shadow-md rounded-lg h-full lg:max-h-2/3 lg:absolute top-1/2 lg:-translate-y-1/2 :-left-5 lg:-rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
+                            className='bg-white dark:bg-base-900 shadow-md rounded-lg h-full lg:max-h-2/3 lg:absolute top-1/2 lg:-translate-y-1/2 :-left-5 lg:-rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
                             <div className='flex justify-between'>
                                 <div className='flex items-center gap-1'>
                                     <img
@@ -76,7 +76,7 @@ const VideoFeature = () => {
                                     className='rounded-md w-full h-full object-cover'
                                 />
                                 <div
-                                    className='bg-[#f8f9fa] shadow-sm absolute top-1/4 left-1/2 -translate-x-[125%] -translate-y-1/2 rounded-md w-2/3 py-1 text-center text-muted-foreground hidden lg:block'>
+                                    className='bg-[#f8f9fa] shadow-sm absolute top-1/4 left-1/2 -translate-x-[125%] -translate-y-1/2 rounded-md w-2/3 py-1 text-center text-muted-foreground hidden lg:block dark:text-black'>
                                     Not Available
                                 </div>
                             </div>
@@ -88,8 +88,8 @@ const VideoFeature = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-[#f8f9fa] flex-1 rounded-xl p-2 relative flex justify-between items-center">
-                        <div className='bg-white shadow-md rounded-lg h-full lg:max-h-2/3 lg:absolute top-1/3 lg:-translate-y-1/3 left-0 lg:rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
+                    <div className="bg-base-100 dark:bg-background flex-1 rounded-xl p-2 relative flex justify-between items-center">
+                        <div className='bg-white dark:bg-base-900 shadow-md rounded-lg h-full lg:max-h-2/3 lg:absolute top-1/3 lg:-translate-y-1/3 left-0 lg:rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
                             <div className='flex justify-between'>
                                 <div className='flex items-center gap-1'>
                                     <img
@@ -113,7 +113,7 @@ const VideoFeature = () => {
                                     className='rounded-md w-full h-full object-cover'
                                 />
                                 <div
-                                    className='bg-[#70e000] shadow-sm absolute top-3/4 right-1/2 translate-x-[100%] -translate-y-1/2 rounded-md w-2/3 py-1 text-center text-muted-foreground hidden lg:block'>
+                                    className='bg-[#70e000] shadow-sm absolute top-3/4 right-1/2 translate-x-[100%] -translate-y-1/2 rounded-md w-2/3 py-1 text-center text-muted-foreground hidden lg:block dark:text-black'>
                                     Available
                                 </div>
                             </div>
