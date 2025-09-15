@@ -113,6 +113,9 @@ const Header = () => {
                   <TransitionLink href="/video-conference">
                     {t('video')}
                   </TransitionLink>
+                  <TransitionLink href="/survey">
+                    {t('survey')}
+                  </TransitionLink>
                 </div>
                 <div className="mt-6 flex flex-col gap-4">
                   <Button variant="outline">Sign in</Button>
