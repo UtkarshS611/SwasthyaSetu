@@ -20,7 +20,7 @@ const Page = () => {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: 1,
-            text: "Hello! I'm your personal health assistant. How can I help you today?",
+            text: "Hello! I'm your Swasthya Setu Assistant. How can I help you today?",
             isBot: true,
         },
     ]);
@@ -36,8 +36,19 @@ const Page = () => {
         setMessages((prev) => [...prev, newMessage]);
         setIsLoading(true);
 
+        const prompt = `
+I am sending you a message. Carefully read the message below.
+- If the message is related to medical or healthcare topics, provide a concise, accurate, medically-focused response.
+- Otherwise reply exactly (and only) with:
+  Please ask queries related to health issues
+Do not provide any other information if the message is not healthcare related.
+
+User message:
+${text}
+  `.trim();
+
         try {
-            const response = await getGeminiResponse(text);
+            const response = await getGeminiResponse(prompt);
             const formattedResponse = response.replace(/\*\*/g, '').trim();
 
             const botResponse: Message = {

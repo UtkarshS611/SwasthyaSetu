@@ -32,7 +32,7 @@
       "title": "Assistant IA contextuel",
       "subtitle": "Interagissez avec notre Assistant IA pour des réponses instantanées à vos questions médicales, des conseils de santé personnalisés et un support multilingue."
     }
-  },  
+  },
   "Header": {
     "BtnText": "Se connecter",
     "home": "Accueil",
@@ -41,8 +41,7 @@
     "video": "Consultation vidéo",
     "survey": "Enquête de santé"
   },
-  
-  
+
   "Survey": {
     "Step1": {
       "title": "Informations de base",
@@ -85,8 +84,22 @@
       "title": "Examen",
       "reviewNote": "Veuillez vérifier attentivement toutes les informations avant de les soumettre."
     }
+  },
+  "FAQs": {
+    "title": "Foire aux questions",
+    "q1": "Quand puis-je réserver une consultation ?",
+    "a1": "Vous pouvez réserver des consultations de télémédecine à tout moment, 24h/24 et 7j/7. La disponibilité des médecins peut varier, mais les créneaux et les temps d’attente sont toujours visibles dans l’application.",
+
+    "q2": "Quels types de médecins sont disponibles ?",
+    "a2": "Notre plateforme vous met en relation avec des médecins généralistes, des pédiatres, des dermatologues et d'autres spécialistes. Vous pouvez choisir en fonction de votre problème de santé et de votre créneau préféré.",
+
+    "q3": "Comment vérifier la disponibilité des médicaments ?",
+    "a3": "Après votre consultation, la plateforme affiche en temps réel les stocks des pharmacies à proximité afin que vous puissiez facilement trouver où vos médicaments prescrits sont disponibles.",
+
+    "q4": "La plateforme est-elle disponible en plusieurs langues ?",
+    "a4": "Oui, l’application prend en charge plusieurs langues indiennes, dont l’hindi, le pendjabi et le bengali, rendant les soins de santé plus accessibles à tous.",
+
+    "q5": "Dois-je créer un compte ?",
+    "a5": "Oui, la création d’un compte vous aide à stocker en toute sécurité vos antécédents médicaux, ordonnances et consultations passées, ce qui rend les visites futures plus rapides et plus personnalisées."
   }
-
-
-
 }

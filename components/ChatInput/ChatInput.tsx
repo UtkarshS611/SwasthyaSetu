@@ -12,7 +12,7 @@ export function ChatInput({ onSend }: ChatInputProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (message.trim()) {
-      onSend(message);
+      onSend(`${message}`);
       setMessage('');
     }
   };
