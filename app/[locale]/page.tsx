@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Hero from '@/components/Hero/Hero';
-import Features from '@/components/Features/Features';
 import Benefits from '@/components/Benefits/Benefits';
 import Faqs from '@/components/Faqs/Faqs';
 import VideoFeature from '@/components/VideoFeature/VideoFeature';
+import AIFeature from '@/components/AIFeature/AIFeature';
 
 export default function HomePage() {
 
@@ -13,6 +13,7 @@ export default function HomePage() {
             <Hero />
             <Benefits />
             <VideoFeature />
+            <AIFeature />
             <Faqs />
         </main>
     );
