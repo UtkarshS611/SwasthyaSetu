@@ -25,7 +25,7 @@ const stepMapping: Record<string, string> = {
 };
 
 export function convertToQnA(
-  formData: Record<string, any>,
+  formData: Record<string, string | number | null | undefined>,
   t: (key: string) => string
 ): QA[] {
   return Object.entries(formData).map(([key, value]) => {
@@ -33,9 +33,9 @@ export function convertToQnA(
     let question = t(`${step}.${key}`);
     if (typeof question !== "string") question = String(question);
 
-    let answer = value;
-    if (answer === undefined || answer === null || answer === "") answer = "N/A";
-    else answer = String(answer);
+    const answer = value === undefined || value === null || value === ""
+      ? "N/A"
+      : String(value);
 
     return { question, answer };
   });
