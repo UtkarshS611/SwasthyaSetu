@@ -10,8 +10,8 @@ const Hero = () => {
   const t = useTranslations('Hero');
 
   return (
-    <section className='px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 relative'>
-      <div className='py-40 lg:py-64 relative flex hero-animation'>
+    <section className='px-4 sm:px-16 md:px-36 lg:px-44 relative'>
+      <div className='py-16 md:py-32 xl:py-64 relative flex hero-animation'>
         <div className='flex flex-col gap-8 max-w-xl w-full'>
           <h1 className='font-bold text-5xl lg:text-6xl xl:text-7xl leading-15 lg:leading-18'>
             {t('title')}

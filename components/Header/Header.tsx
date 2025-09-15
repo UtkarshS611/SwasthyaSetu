@@ -25,7 +25,7 @@ const Header = () => {
   const t = useTranslations('Header');
 
   return (
-    <section className="py-4 header-animation px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56">
+    <section className="flex justify-center items-center py-4 header-animation px-4 sm:px-16 md:px-36 lg:px-44">
       <div className="w-full">
         <nav className="flex items-center justify-between relative">
           <TransitionLink
@@ -42,7 +42,7 @@ const Header = () => {
               Swasthya Setu
             </span>
           </TransitionLink>
-          <div className="hidden lg:block absolute left-1/2 -translate-x-1/2 max-w-max space-x-2 text-black">
+          <div className="hidden xl:block absolute left-1/2 -translate-x-1/2 max-w-max space-x-2 text-black">
             <Button variant={"ghost"}>
               <TransitionLink href="/">
                 {t('home')}
@@ -69,13 +69,13 @@ const Header = () => {
               </TransitionLink>
             </Button>
           </div>
-          <div className="hidden items-center gap-4 lg:flex">
+          <div className="hidden items-center gap-4 xl:flex">
             <ThemeSwitch />
             <Button variant="outline">Sign in</Button>
             <LanguageSwitch />
           </div>
           <Sheet>
-            <SheetTrigger asChild className="lg:hidden">
+            <SheetTrigger asChild className="xl:hidden">
               <Button variant="outline" size="icon">
                 <MenuIcon className="h-4 w-4" />
               </Button>
