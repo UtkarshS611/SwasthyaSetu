@@ -1,27 +1,33 @@
-import jsPDF from "jspdf";
-import { HealthSurveyFormData } from "@/components/Form/Health-survey/HealthSurvey";
+"use client";
 
-export const generateAndSavePDF = async (formData: HealthSurveyFormData) => {
-  return new Promise<void>((resolve, reject) => {
+import jsPDF from "jspdf";
+import type { QA } from "./convertToQnA";
+
+/**
+ * Generate PDF from Q&A
+ */
+export const generateAndSavePDF = async (qaData: QA[]): Promise<Blob> => {
+  return new Promise((resolve, reject) => {
     try {
       const doc = new jsPDF();
       doc.setFontSize(16);
       doc.text("Health Survey Form Data", 20, 20);
 
       let y = 30;
-      for (const [key, value] of Object.entries(formData)) {
+      for (const { question, answer } of qaData) {
         doc.setFontSize(12);
-        doc.text(`${key}: ${value}`, 20, y);
-        y += 10;
-        if (y > 280) { // page break
+        doc.text(`Q: ${question}`, 20, y);
+        y += 8;
+        doc.text(`A: ${answer}`, 30, y);
+        y += 12;
+
+        if (y > 280) {
           doc.addPage();
           y = 20;
         }
       }
 
-      const pdfData = doc.output("datauristring");
-      localStorage.setItem("healthSurveyPDF", pdfData); // Save to localStorage
-      resolve();
+      resolve(doc.output("blob"));
     } catch (err) {
       reject(err);
     }
