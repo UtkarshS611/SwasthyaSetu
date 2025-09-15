@@ -28,14 +28,14 @@ const Hero = () => {
         <div className='absolute top-0 -right-2/5 -translate-x-1/2'>
           <div
             className='absolute h-full w-full top-0 left-0 bg-linear-to-b from-transparent from-80% to-white dark:to-[#0a0a0a]' />
-          {/* <Image
+          <Image
             className='heroImage 2xl:block hidden'
             priority
-            src="/hero/heroImage.png"
+            src="/hero/heroImage.svg"
             alt="Hero Image"
             width={750}
             height={400}
-          /> */}
+          />
         </div>
       </div>
     </section>
