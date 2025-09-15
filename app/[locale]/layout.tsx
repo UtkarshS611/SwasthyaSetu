@@ -2,16 +2,21 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing } from '@/i18n/routing';
+
 import './globals.css';
+
+import { routing } from '@/i18n/routing';
+
 import { ThemeProvider } from '@/components/Theme-provider/ThemeProvider';
+
 import Header from '@/components/Header/Header';
-import { Toaster } from '@/components/ui/sonner';
 import Footer from '@/components/Footer/Footer';
 
+import { Toaster } from '@/components/ui/sonner';
+
 export const metadata: Metadata = {
-  title: 'Next.js i18n App',
-  description: 'Next.js app with internationalization',
+  title: 'Swasthya Setu',
+  description: 'Your Health Companion App - Track, Manage, and Improve Your Well-being',
 };
 
 type Props = {

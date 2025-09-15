@@ -41,8 +41,7 @@
     "video": "Video Consultation",
     "survey": "Health Survey"
   },
-  
-  
+
   "Survey": {
     "Step1": {
       "title": "Basic Information",
@@ -85,9 +84,22 @@
       "title": "Review",
       "reviewNote": "Please review all the information carefully before submission."
     }
+  },
+  "FAQs": {
+    "title": "Frequently Asked Questions",
+    "q1": "When can I book a consultation?",
+    "a1": "You can book telemedicine consultations anytime, 24/7. Doctor availability may vary, but appointment slots and wait times are always visible in the app.",
+
+    "q2": "What types of doctors are available?",
+    "a2": "Our platform connects you with general physicians, pediatricians, dermatologists, and other specialists. You can choose based on your health concern and preferred time slot.",
+
+    "q3": "How do I check medicine availability?",
+    "a3": "After your consultation, the platform shows real-time stock updates from nearby pharmacies so you can easily find where your prescribed medicines are available.",
+
+    "q4": "Is the platform available in multiple languages?",
+    "a4": "Yes, the app supports multiple Indian languages including Hindi, Punjabi, and Bengali, making healthcare more accessible to everyone.",
+
+    "q5": "Do I need to create an account?",
+    "a5": "Yes, creating an account helps you securely store medical history, prescriptions, and past consultations, making future visits faster and more personalized."
   }
-
-
-
 }
-
