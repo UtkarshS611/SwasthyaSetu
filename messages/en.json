@@ -43,6 +43,11 @@
   },
 
   "Survey": {
+    "SurveyPage": {
+      "titleOne": "Help Us Understand Your Health Better",
+      "titleTwo": "Take Our Quick Survey.",
+      "subtitle": "Share details about your lifestyle, symptoms, and medical history through our easy-to-use health survey. Your input enables smarter AI insights, helping predict risks, track wellness trends, and connect you with the right care. The survey is simple, confidential, and designed to give you a clearer picture of your health journey."
+    },
     "Step1": {
       "title": "Basic Information",
       "name": "What is your full name?",

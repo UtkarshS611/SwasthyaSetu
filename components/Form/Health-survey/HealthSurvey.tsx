@@ -105,15 +105,15 @@ export default function HealthSurvey() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#f5f7fa] to-[#c3cfe2] dark:from-[#0a0a0a] dark:to-[#1c1c1c] px-4">
-      <Card className="w-full max-w-3xl shadow-2xl border-none rounded-2xl bg-white/80 dark:bg-[#111]/80 backdrop-blur-md">
+    <div >
+      <Card className="w-full rounded-xl bg-background">
         <CardHeader>
           <Progress value={((step + 1) / slides.length) * 100} className="h-2 rounded-full" />
           <p className="text-sm text-muted-foreground mt-2">
             Step {step + 1} of {slides.length}
           </p>
         </CardHeader>
-        <CardContent className="flex flex-col h-[600px]">
+        <CardContent className="flex flex-col">
           <div className="flex-1 overflow-y-auto">
             {loading ? (
               <p className="text-center text-lg font-semibold mt-20">
@@ -137,8 +137,8 @@ export default function HealthSurvey() {
           </div>
 
           {!loading && !submitted && (
-            <div className="flex justify-between border-t pt-4 mt-4 sticky bottom-0 bg-white/80 dark:bg-[#111]/80">
-              <Button onClick={handleBack} disabled={isFirst} variant="outline">
+            <div className="flex justify-between border-t border-primary pt-4 mt-4">
+              <Button onClick={handleBack} disabled={isFirst} variant={"outline"}>
                 Back
               </Button>
               <Button onClick={handleNext}>{isLast ? "Finish" : "Next"}</Button>

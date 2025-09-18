@@ -16,62 +16,60 @@ const Benefits = () => {
     const t = useTranslations('Benefits')
 
     return (
-        <section className='pb-16 lg:pb-24'>
-            <div className="px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56">
-                <div className="w-full">
-                    <div className='space-y-4 py-4 text-center lg:text-start'>
-                        <h1 className='text-4xl lg:text-6xl font-semibold flex flex-col'>
-                            <span>
-                                {t('titleOne')}
-                            </span>
-                            <span>
-                                {t('titleTwo')}
-                            </span>
-                        </h1>
-                        <p className='text-sm'>
-                            {t('subtitle')}
+        <section className='px-4 sm:px-16 md:px-36 lg:px-44'>
+            <div className="w-full">
+                <div className='space-y-4 py-4 text-center lg:text-start'>
+                    <h1 className='text-4xl lg:text-6xl font-semibold flex flex-col'>
+                        <span>
+                            {t('titleOne')}
+                        </span>
+                        <span>
+                            {t('titleTwo')}
+                        </span>
+                    </h1>
+                    <p className='text-sm'>
+                        {t('subtitle')}
+                    </p>
+                </div>
+                <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    <Card
+                        className="overflow-hidden p-6">
+                        <Target className="text-primary size-5" />
+                        <h3 className="text-foreground mt-5 text-lg font-semibold">
+                            {t('benefit1.title')}
+                        </h3>
+                        <p className="text-muted-foreground mt-3 text-balance">
+                            {t('benefit1.subtitle')}
                         </p>
-                    </div>
-                    <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                        <Card
-                            className="overflow-hidden p-6">
-                            <Target className="text-primary size-5" />
-                            <h3 className="text-foreground mt-5 text-lg font-semibold">
-                                {t('benefit1.title')}
-                            </h3>
-                            <p className="text-muted-foreground mt-3 text-balance">
-                                {t('benefit1.subtitle')}
-                            </p>
-                            <MeetingIllustration />
-                        </Card>
+                        <MeetingIllustration />
+                    </Card>
 
-                        <Card
-                            className="group overflow-hidden px-6 pt-6">
-                            <CalendarCheck className="text-primary size-5" />
-                            <h3 className="text-foreground mt-5 text-lg font-semibold">
-                                {t('benefit2.title')}
-                            </h3>
-                            <p className="text-muted-foreground mt-3 text-balance">
-                                {t('benefit2.subtitle')}
-                            </p>
+                    <Card
+                        className="group overflow-hidden px-6 pt-6">
+                        <CalendarCheck className="text-primary size-5" />
+                        <h3 className="text-foreground mt-5 text-lg font-semibold">
+                            {t('benefit2.title')}
+                        </h3>
+                        <p className="text-muted-foreground mt-3 text-balance">
+                            {t('benefit2.subtitle')}
+                        </p>
 
-                            <CodeReviewIllustration />
-                        </Card>
-                        <Card
-                            className="group overflow-hidden px-6 pt-6">
-                            <Sparkles className="text-primary size-5" />
-                            <h3 className="text-foreground mt-5 text-lg font-semibold">
-                                {t('benefit3.title')}
-                            </h3>
-                            <p className="text-muted-foreground mt-3 text-balance">
-                                {t('benefit3.subtitle')}
-                            </p>
+                        <CodeReviewIllustration />
+                    </Card>
+                    <Card
+                        className="group overflow-hidden px-6 pt-6">
+                        <Sparkles className="text-primary size-5" />
+                        <h3 className="text-foreground mt-5 text-lg font-semibold">
+                            {t('benefit3.title')}
+                        </h3>
+                        <p className="text-muted-foreground mt-3 text-balance">
+                            {t('benefit3.subtitle')}
+                        </p>
 
-                            <div className="mask-b-from-50 -mx-2 -mt-2 px-2 pt-2">
-                                <AIAssistantIllustration />
-                            </div>
-                        </Card>
-                    </div>
+                        <div className="mask-b-from-50 -mx-2 -mt-2 px-2 pt-2">
+                            <AIAssistantIllustration />
+                        </div>
+                    </Card>
                 </div>
             </div>
         </section>

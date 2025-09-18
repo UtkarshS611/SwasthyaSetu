@@ -43,6 +43,11 @@
   },
 
   "Survey": {
+    "SurveyPage": {
+      "titleOne": "Aidez-nous à mieux comprendre votre santé",
+      "titleTwo": "Participez à notre rapide sondage.",
+      "subtitle": "Partagez des informations sur votre mode de vie, vos symptômes et vos antécédents médicaux grâce à notre sondage de santé simple et rapide. Vos réponses permettent à l’IA de fournir des analyses plus intelligentes, de prédire les risques, de suivre les tendances de bien-être et de vous orienter vers les soins appropriés. Le sondage est simple, confidentiel et conçu pour vous donner une vision plus claire de votre parcours de santé."
+    },
     "Step1": {
       "title": "Informations de base",
       "name": "Quel est votre nom complet?",
