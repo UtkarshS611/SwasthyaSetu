@@ -106,5 +106,47 @@
 
     "q5": "Do I need to create an account?",
     "a5": "Yes, creating an account helps you securely store medical history, prescriptions, and past consultations, making future visits faster and more personalized."
-  }
+  },
+
+  "Footer": {
+    "features": "Features",
+    "solution": "Solution",
+    "customers": "Customers",
+    "pricing": "Pricing",
+    "help": "Help",
+    "about": "About",
+    "rights": "All rights reserved"
+  },
+  "VideoFeature": {
+    "title": "Introducing Low Bandwidth Consultations",
+    "description": "Seamless care that adapts to your network—<highlight>start with video, switch to audio on weak signals, and auto-schedule follow-ups if connectivity fails.</highlight>",
+    "cta": "Take a look",
+    "tryOut": "Try out",
+    "insightsTitle": "Insights & Updates",
+    "insightsDescription": "Stay informed with the latest news and updates from our team.",
+    "doctor1": "Dr. Ranjan",
+    "doctor2": "Dr. Ruchi",
+    "verified": "Verified",
+    "notAvailable": "Not Available",
+    "available": "Available",
+    "videoConsultTitle": "Consult On Video",
+    "videoConsultDesc": "Get expert medical advice anytime, anywhere",
+    "audioConsultTitle": "Consult On Audio",
+    "audioConsultDesc": "Talk to doctors clearly, even on low networks."
+  },
+
+  "AIFeature": {
+    "title": "Emergency Situation? AI-Powered Analysis At Your Finger Tips",
+    "description": "In critical moments, every second counts. <highlight>Our AI-driven system rapidly analyzes symptoms and vital signs to provide immediate, accurate assessments, ensuring you receive the urgent care you need without delay.</highlight>",
+    "ctaChat": "Have A Chat",
+    "ctaAnalyse": "Analyse Symptoms",
+    "tryOut": "Try out",
+    "insightsTitle": "Insights & Updates",
+    "insightsDescription": "Stay informed with the latest news and updates from our team.",
+    "aiConsultTitle": "Consult With AI",
+    "aiConsultDesc": "Get expert medical advice anytime, anywhere",
+    "analysisTitle": "On Point Analysis",
+    "analysisDesc": "Accurate symptom analysis at your fingertips with medications.",
+    "verified": "Verified",
+    "doctorName": "Gemini"}
 }
