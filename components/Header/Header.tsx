@@ -33,14 +33,15 @@ const Header = () => {
             className="flex items-center gap-2"
           >
             <Image
-              src="/logo.svg"
-              height={35}
-              width={35}
+              src="/logo.png"
+              height={100}
+              width={100}
               alt="Shadcn UI Navbar"
             />
-            <span className="text-lg font-semibold tracking-tighter text-black">
-              Swasthya Setu
-            </span>
+            <span className="text-lg font-semibold tracking-tighter">
+  <span className="text-[#001F54]">Swasthya</span>
+  <span className="text-[#36A420]">Setu</span>
+</span>
           </TransitionLink>
           <div className="hidden xl:block absolute left-1/2 -translate-x-1/2 max-w-max space-x-2 text-black">
             <Button variant={"ghost"}>
@@ -88,14 +89,15 @@ const Header = () => {
                     className="flex items-center gap-2"
                   >
                     <Image
-                      src="/logo.svg"
-                      height={35}
-                      width={35}
+                      src="/logo.png"
+                      height={100}
+                      width={100}
                       alt="Shadcn UI Navbar"
                     />
                     <span className="text-lg font-semibold tracking-tighter">
-                      Swasthya Setu
-                    </span>
+  <span className="text-[#001F54]">Swasthya</span>
+  <span className="text-[#36A420]">Setu</span>
+</span>
                   </TransitionLink>
                 </SheetTitle>
               </SheetHeader>
