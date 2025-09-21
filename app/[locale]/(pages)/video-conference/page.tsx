@@ -1,5 +1,6 @@
-import JoinRoom from '@/components/JoinRoom/JoinRoom'
 import React from 'react'
+
+import JoinRoom from '@/components/JoinRoom/JoinRoom'
 
 const Page = () => {
     return (

@@ -1,12 +1,14 @@
 "use client";
-
 import React from "react";
-import TransitionLink from "../TransitionLink/TransitionLink";
-import { BadgeCheck } from "lucide-react";
-import { Button } from "../ui/button";
-import { AnimateSvg } from "./Arrow";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+
+import { BadgeCheck } from "lucide-react";
+
+import TransitionLink from "../TransitionLink/TransitionLink";
+
+import { Button } from "../ui/button";
+import { AnimateSvg } from "./Arrow";
 
 const VideoFeature = () => {
   const t = useTranslations("VideoFeature");

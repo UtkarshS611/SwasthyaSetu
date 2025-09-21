@@ -1,12 +1,16 @@
 'use client'
 
 import React from 'react'
-import TransitionLink from '../TransitionLink/TransitionLink'
-import { BadgeCheck, Brain } from 'lucide-react'
-import { Button } from '../ui/button'
-import Image from 'next/image'
-import { AnimateSvg } from '../VideoFeature/Arrow'
 import { useTranslations } from 'next-intl'
+import Image from 'next/image'
+
+import TransitionLink from '../TransitionLink/TransitionLink'
+
+import { BadgeCheck, Brain } from 'lucide-react'
+
+import { Button } from '../ui/button'
+
+import { AnimateSvg } from '../VideoFeature/Arrow'
 
 const AIFeature = () => {
   const t = useTranslations('AIFeature')

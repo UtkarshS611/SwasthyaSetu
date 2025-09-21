@@ -1,9 +1,9 @@
 "use client";
-
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { Video, Users } from "lucide-react";
 import { useLocale } from "next-intl";
+
+import { Video, Users } from "lucide-react";
 
 const JoinRoom = () => {
 

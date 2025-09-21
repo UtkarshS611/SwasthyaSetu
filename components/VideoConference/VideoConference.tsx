@@ -1,8 +1,9 @@
 "use client";
+import { useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
 
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
-import { useSearchParams } from "next/navigation";
-import { useEffect, useRef } from "react";
+
 import { toast } from "sonner";
 
 interface Props {

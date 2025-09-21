@@ -1,10 +1,11 @@
+import { useTranslations } from 'next-intl'
+
 import TransitionLink from '../TransitionLink/TransitionLink'
 
 import { ArrowUp, CalendarCheck, Globe, Play, Plus, Signature, Sparkles, Target } from 'lucide-react'
 
-import { Card } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { useTranslations } from 'next-intl'
+import { Card } from '@/components/ui/card'
 
 const MESCHAC_AVATAR = 'https://avatars.githubusercontent.com/u/47919550?v=4'
 const BERNARD_AVATAR = 'https://avatars.githubusercontent.com/u/31113941?v=4'

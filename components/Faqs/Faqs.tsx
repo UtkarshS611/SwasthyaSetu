@@ -1,9 +1,9 @@
 'use client'
+import { useTranslations } from 'next-intl'
 
 import { DynamicIcon, type IconName } from 'lucide-react/dynamic'
 
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
-import { useTranslations } from 'next-intl'
 
 type FAQItem = {
     id: string

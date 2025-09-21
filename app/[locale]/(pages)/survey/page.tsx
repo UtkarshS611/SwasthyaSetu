@@ -1,7 +1,8 @@
 "use client";
 
-import HealthSurvey from "@/components/Form/Health-survey/HealthSurvey";
 import { useTranslations } from "next-intl";
+
+import HealthSurvey from "@/components/Form/Health-survey/HealthSurvey";
 
 export default function SurveyPage() {
 

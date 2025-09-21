@@ -1,8 +1,8 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 import type { HealthSurveyFormData } from "./HealthSurvey";
 import { convertToQnA, QA } from "@/lib/convertToQnA";
-import { useTranslations } from "next-intl";
 
 type Props = { formData: HealthSurveyFormData ;  t: (key: string) => string;};
 

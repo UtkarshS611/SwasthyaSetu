@@ -1,8 +1,9 @@
 import React from "react";
-import Link from "next/link";
-import TransitionLink from "../TransitionLink/TransitionLink";
 import Image from "next/image";
+
 import { useTranslations } from "next-intl";
+
+import TransitionLink from "../TransitionLink/TransitionLink";
 
 const Footer = () => {
 
