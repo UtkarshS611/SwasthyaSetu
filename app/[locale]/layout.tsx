@@ -15,8 +15,11 @@ import Footer from '@/components/Footer/Footer';
 import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
-  title: 'Swasthya Setu',
+  title: 'Swasthya Setu - Your Health Companion App',
   description: 'Your Health Companion App - Track, Manage, and Improve Your Well-being',
+  icons: {
+    icon: '/logo.svg',
+  },
 };
 
 type Props = {

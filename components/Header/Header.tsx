@@ -25,7 +25,7 @@ const Header = () => {
   const t = useTranslations('Header');
 
   return (
-    <section className="flex justify-center items-center py-4 header-animation px-16">
+    <section className="flex justify-center items-center py-4 header-animation px-4 lg:px-32">
       <div className="w-full">
         <nav className="flex items-center justify-between relative">
           <TransitionLink
@@ -33,15 +33,15 @@ const Header = () => {
             className="flex items-center gap-2"
           >
             <Image
-              src="/logo.png"
-              height={100}
-              width={100}
-              alt="Shadcn UI Navbar"
+              src="/logo.svg"
+              height={75}
+              width={75}
+              alt="logo"
             />
-            <span className="text-lg font-semibold tracking-tighter">
-  <span className="text-[#001F54]">Swasthya</span>
-  <span className="text-[#36A420]">Setu</span>
-</span>
+            <span className="text-lg font-semibold">
+              <span>Swasthya </span>
+              <span className="text-primary">Setu</span>
+            </span>
           </TransitionLink>
           <div className="hidden xl:block absolute left-1/2 -translate-x-1/2 max-w-max space-x-2 text-black">
             <Button variant={"ghost"}>
@@ -64,7 +64,7 @@ const Header = () => {
                 {t('video')}
               </TransitionLink>
             </Button>
-             <Button variant={"ghost"}>
+            <Button variant={"ghost"}>
               <TransitionLink href="/survey">
                 {t('survey')}
               </TransitionLink>
@@ -72,7 +72,6 @@ const Header = () => {
           </div>
           <div className="hidden items-center gap-4 xl:flex">
             <ThemeSwitch />
-            <Button variant="outline">Sign in</Button>
             <LanguageSwitch />
           </div>
           <Sheet>
@@ -89,15 +88,15 @@ const Header = () => {
                     className="flex items-center gap-2"
                   >
                     <Image
-                      src="/logo.png"
-                      height={100}
-                      width={100}
-                      alt="Shadcn UI Navbar"
+                      src="/logo.svg"
+                      height={75}
+                      width={75}
+                      alt="logo"
                     />
-                    <span className="text-lg font-semibold tracking-tighter">
-  <span className="text-[#001F54]">Swasthya</span>
-  <span className="text-[#36A420]">Setu</span>
-</span>
+                    <span className="text-lg font-semibold">
+                      <span>Swasthya</span>
+                      <span className="text-primary">Setu</span>
+                    </span>
                   </TransitionLink>
                 </SheetTitle>
               </SheetHeader>
@@ -120,7 +119,6 @@ const Header = () => {
                   </TransitionLink>
                 </div>
                 <div className="mt-6 flex flex-col gap-4">
-                  <Button variant="outline">Sign in</Button>
                   <LanguageSwitch />
                   <ThemeSwitch />
                 </div>

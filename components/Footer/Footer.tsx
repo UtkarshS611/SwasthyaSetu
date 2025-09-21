@@ -1,61 +1,92 @@
-"use client";
-
+import React from "react";
 import Link from "next/link";
 import TransitionLink from "../TransitionLink/TransitionLink";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-
-const links = [
-  { key: "features", href: "#" },
-  { key: "solution", href: "#" },
-  { key: "customers", href: "#" },
-  { key: "pricing", href: "#" },
-  { key: "help", href: "#" },
-  { key: "about", href: "#" }
-];
 
 const Footer = () => {
-  const t = useTranslations("Footer");
+
+  const sections = [
+    {
+      title: "Company",
+      links: [
+        { name: "Chat With AI", href: "/chat-with-ai" },
+        { name: "Video Consultation", href: "/video-conference" },
+        { name: "Symptom Check", href: "/symptom-analysis" },
+        { name: "Survey", href: "/survey" },
+      ],
+    },
+    {
+      title: "Legal Links",
+      links: [
+        { name: "Copyrights", href: "/" },
+        { name: "Privacy Policy", href: "/" }
+      ],
+    },
+  ];
+
+  const date = new Date().getFullYear();
+  const legalLinks = [
+    { href: "/", label: "Privacy Policy" },
+    { href: "/", label: "Copyrights" }
+  ]
 
   return (
-    <footer className="px-4 sm:px-16 md:px-36 lg:px-44 xl:px-56 py-16">
+    <footer className="pt-16 flex justify-center px-6 md:px-16 lg:px-32">
       <div className="w-full">
-        <div className="flex justify-center items-center">
-          <TransitionLink href="/" className="flex items-center gap-2">
-            <Image
-              src="/logo.svg"
-              height={35}
-              width={35}
-              alt="Swasthya Setu Logo"
-            />
-            <span className="text-lg font-semibold tracking-tighter text-black">
-              Swasthya Setu
-            </span>
-          </TransitionLink>
+        <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
+          <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
+            {/* Logo */}
+            <div className="flex items-center gap-2 lg:justify-start">
+              <TransitionLink
+                href="/"
+                className="flex items-center gap-2"
+              >
+                <Image
+                  src="/logo.svg"
+                  height={75}
+                  width={75}
+                  alt="logo"
+                />
+                <span className="text-lg font-semibold">
+                  <span>Swasthya </span>
+                  <span className="text-primary">Setu</span>
+                </span>
+              </TransitionLink>
+            </div>
+            <p className="text-muted-foreground md:max-w-[70%] text-sm">
+              Your Health Companion App - Track, Manage, and Improve Your Well-being
+            </p>
+          </div>
+          <div className="grid w-full gap-6 md:grid-cols-2 lg:gap-20">
+            {sections.map((section, sectionIdx) => (
+              <div key={sectionIdx}>
+                <h3 className="mb-4 font-semibold">{section.title}</h3>
+                <ul className="text-muted-foreground space-y-3 text-sm">
+                  {section.links.map((link, linkIdx) => (
+                    <li
+                      key={linkIdx}
+                      className="hover:text-primary font-medium"
+                    >
+                      <TransitionLink href={link.href}>{link.name}</TransitionLink>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-
-        {/* Navigation Links */}
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
-          {links.map((link, index) => (
-            <Link
-              key={index}
-              href={link.href}
-              className="text-muted-foreground hover:text-primary block duration-150"
-            >
-              <span>{t(link.key)}</span>
-            </Link>
-          ))}
+        <div className="mt-8 flex flex-col md:flex-row justify-between items-center border-t py-8 text-xs font-medium gap-5">
+          <p className="order-2 lg:order-1">
+            © Copyright Swasthya Setu {date}
+          </p>
+          <ul className="flex gap-2 order-1 md:order-2 md:flex-row">
+            {legalLinks.map((link, index) => (
+              <li key={index} className="hover:text-primary">
+                <TransitionLink href={link.href}> {link.label}</TransitionLink>
+              </li>
+            ))}
+          </ul>
         </div>
-
-        {/* Social Media Links */}
-        <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
-          {/* keep your SVG social links here */}
-        </div>
-
-        {/* Footer Rights */}
-        <span className="text-muted-foreground block text-center text-sm">
-          © {new Date().getFullYear()} Tailark, {t("rights")}
-        </span>
       </div>
     </footer>
   );
