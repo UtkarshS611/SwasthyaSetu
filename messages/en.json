@@ -109,13 +109,17 @@
   },
 
   "Footer": {
-    "features": "Features",
-    "solution": "Solution",
-    "customers": "Customers",
-    "pricing": "Pricing",
-    "help": "Help",
-    "about": "About",
-    "rights": "All rights reserved"
+    "subHeading": "Your Health Companion App - Track, Manage, and Improve Your Well-being.",
+    "company": {
+      "chat":"Chat With AI",
+      "symptoms":"Symptom Check",
+      "video":"Video Consultation",
+      "survey":"Health Survey"
+    },
+    "legals": {
+      "privacy": "Privacy Policy",
+      "copyright": "Copyrights"
+    }
   },
   "VideoFeature": {
     "title": "Introducing Low Bandwidth Consultations",

@@ -108,30 +108,36 @@
     "a5": "Oui, la création d’un compte vous aide à stocker en toute sécurité vos antécédents médicaux, ordonnances et consultations passées, ce qui rend les visites futures plus rapides et plus personnalisées."
   },
   "Footer": {
-    "features": "Fonctionnalités",
-    "solution": "Solution",
-    "customers": "Clients",
-    "pricing": "Tarification",
-    "help": "Aide",
-    "about": "À propos",
-    "rights": "Tous droits réservés"
-  },"VideoFeature": {
-  "title": "Présentation des consultations à faible bande passante",
-  "description": "Des soins fluides qui s’adaptent à votre réseau — <highlight>démarrez en vidéo, passez à l’audio en cas de signal faible, et planifiez automatiquement un suivi si la connexion échoue.</highlight>",
-  "cta": "Jeter un coup d'œil",
-  "tryOut": "Essayer",
-  "insightsTitle": "Aperçus et mises à jour",
-  "insightsDescription": "Restez informé avec les dernières nouvelles et mises à jour de notre équipe.",
-  "doctor1": "Dr. Ranjan",
-  "doctor2": "Dr. Ruchi",
-  "verified": "Vérifié",
-  "notAvailable": "Indisponible",
-  "available": "Disponible",
-  "videoConsultTitle": "Consulter en vidéo",
-  "videoConsultDesc": "Obtenez des conseils médicaux d’experts à tout moment, n’importe où",
-  "audioConsultTitle": "Consulter en audio",
-  "audioConsultDesc": "Parlez clairement aux médecins, même avec un faible réseau."
-} , "AIFeature": {
+    "subHeading": "Votre application de santé - Suivez, gérez et améliorez votre bien-être.",
+    "company": {
+      "chat": "Discuter avec l'IA",
+      "symptoms": "Vérification des symptômes",
+      "video": "Consultation vidéo",
+      "survey": "Enquête de santé"
+    },
+    "legals": {
+      "privacy": "Politique de confidentialité",
+      "copyright": "Droits d'auteur"
+    }
+  },
+  "VideoFeature": {
+    "title": "Présentation des consultations à faible bande passante",
+    "description": "Des soins fluides qui s’adaptent à votre réseau — <highlight>démarrez en vidéo, passez à l’audio en cas de signal faible, et planifiez automatiquement un suivi si la connexion échoue.</highlight>",
+    "cta": "Jeter un coup d'œil",
+    "tryOut": "Essayer",
+    "insightsTitle": "Aperçus et mises à jour",
+    "insightsDescription": "Restez informé avec les dernières nouvelles et mises à jour de notre équipe.",
+    "doctor1": "Dr. Ranjan",
+    "doctor2": "Dr. Ruchi",
+    "verified": "Vérifié",
+    "notAvailable": "Indisponible",
+    "available": "Disponible",
+    "videoConsultTitle": "Consulter en vidéo",
+    "videoConsultDesc": "Obtenez des conseils médicaux d’experts à tout moment, n’importe où",
+    "audioConsultTitle": "Consulter en audio",
+    "audioConsultDesc": "Parlez clairement aux médecins, même avec un faible réseau."
+  },
+  "AIFeature": {
     "title": "Situation d'urgence ? Analyse alimentée par l'IA à portée de main",
     "description": "Dans les moments critiques, chaque seconde compte. <highlight>Notre système piloté par l'IA analyse rapidement les symptômes et les signes vitaux pour fournir des évaluations immédiates et précises, garantissant que vous receviez les soins urgents dont vous avez besoin sans délai.</highlight>",
     "ctaChat": "Discuter",
@@ -146,7 +152,4 @@
     "verified": "Vérifié",
     "doctorName": "Gémeaux"
   }
-
 }
-
-

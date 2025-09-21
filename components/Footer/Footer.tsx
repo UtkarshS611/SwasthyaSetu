@@ -2,32 +2,35 @@ import React from "react";
 import Link from "next/link";
 import TransitionLink from "../TransitionLink/TransitionLink";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+
+  const t = useTranslations("Footer");
 
   const sections = [
     {
       title: "Company",
       links: [
-        { name: "Chat With AI", href: "/chat-with-ai" },
-        { name: "Video Consultation", href: "/video-conference" },
-        { name: "Symptom Check", href: "/symptom-analysis" },
-        { name: "Survey", href: "/survey" },
+        { name: t("company.chat"), href: "/chat-with-ai" },
+        { name: t("company.symptoms"), href: "/video-conference" },
+        { name: t("company.video"), href: "/symptom-analysis" },
+        { name: t("company.survey"), href: "/survey" },
       ],
     },
     {
       title: "Legal Links",
       links: [
-        { name: "Copyrights", href: "/" },
-        { name: "Privacy Policy", href: "/" }
+        { name: t("legals.privacy"), href: "/" },
+        { name: t("legals.copyright"), href: "/" }
       ],
     },
   ];
 
   const date = new Date().getFullYear();
   const legalLinks = [
-    { href: "/", label: "Privacy Policy" },
-    { href: "/", label: "Copyrights" }
+    { name: t("legals.privacy"), href: "/" },
+    { name: t("legals.copyright"), href: "/" }
   ]
 
   return (
@@ -54,7 +57,7 @@ const Footer = () => {
               </TransitionLink>
             </div>
             <p className="text-muted-foreground md:max-w-[70%] text-sm">
-              Your Health Companion App - Track, Manage, and Improve Your Well-being
+              {t("subHeading")}
             </p>
           </div>
           <div className="grid w-full gap-6 md:grid-cols-2 lg:gap-20">
@@ -82,7 +85,7 @@ const Footer = () => {
           <ul className="flex gap-2 order-1 md:order-2 md:flex-row">
             {legalLinks.map((link, index) => (
               <li key={index} className="hover:text-primary">
-                <TransitionLink href={link.href}> {link.label}</TransitionLink>
+                <TransitionLink href={link.href}> {link.name}</TransitionLink>
               </li>
             ))}
           </ul>
