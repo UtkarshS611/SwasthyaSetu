@@ -21,6 +21,8 @@ const Page = () => {
         en: "english",
         fr: "french",
         hi: "hindi",
+        pu: "punjabi",
+        ur: "urdu",
     };
 
     const handleAnalyze = async () => {

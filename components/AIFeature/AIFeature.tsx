@@ -16,7 +16,7 @@ const AIFeature = () => {
   const t = useTranslations('AIFeature')
 
   return (
-    <section className='my-8 overflow-hidden relative dark:bg-background bg-base-100 lg:h-[90vh] rounded-[40px] p-5 lg:p-16 gap-10 flex flex-col lg:flex-row-reverse justify-between items-center'>
+    <section className='my-8 overflow-hidden relative dark:bg-background bg-base-100 rounded-[40px] p-5 lg:p-16 gap-10 flex flex-col lg:flex-row-reverse justify-between items-center'>
       {/* Left Text Section */}
       <div className='lg:max-w-2xl space-y-4 flex flex-col justify-center items-center lg:items-start text-center lg:text-start'>
         <h2 className='font-semibold text-4xl lg:text-5xl'>
@@ -46,7 +46,7 @@ const AIFeature = () => {
       </div>
 
       {/* Right Cards Section */}
-      <div className="bg-background dark:bg-base-900 relative shadow-md rounded-3xl max-w-3xl w-full h-fit lg:h-full p-5 space-y-5 flex flex-col">
+      <div className="bg-background dark:bg-base-900 relative shadow-md rounded-3xl max-w-3xl w-full min-h-[70vh] p-5 space-y-5 flex flex-col">
         <div className='items-center absolute hidden lg:flex bottom-0 right-[-27%] z-99'>
           <AnimateSvg
             width="150px"
@@ -74,7 +74,7 @@ const AIFeature = () => {
         <div className="flex flex-col sm:flex-row justify-between gap-2 flex-1">
           {/* AI Consultation Card */}
           <div className="bg-base-100 dark:bg-background flex-1 rounded-xl p-2 relative flex justify-center items-center">
-            <div className='bg-white dark:bg-base-900 shadow-md rounded-lg h-full lg:max-h-2/3 lg:absolute top-1/2 lg:-translate-y-1/2 hover:-rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
+            <div className='bg-white dark:bg-base-900 shadow-md rounded-lg lg:absolute top-1/2 lg:-translate-y-1/2 hover:-rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
               <div className='flex justify-between'>
                 <div className='flex items-center gap-1'>
                   <div className='text-green-500 bg-green-500/10 rounded-full aspect-square p-2'>
@@ -87,7 +87,7 @@ const AIFeature = () => {
                   <p className='text-sm'>{t('verified')}</p>
                 </div>
               </div>
-              <div className='bg-linear-to-tr from-blue-500 to-green-200 h-2/3 rounded-md relative'>
+              <div className='rounded-md relative'>
                 <Image
                   src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   width={700}
@@ -106,7 +106,7 @@ const AIFeature = () => {
 
           {/* Analysis Card */}
           <div className="bg-base-100 dark:bg-background flex-1 rounded-xl p-2 relative flex justify-between items-center">
-            <div className='bg-white dark:bg-base-900 shadow-md rounded-lg h-full lg:max-h-2/3 lg:absolute top-1/3 lg:-translate-y-1/3 left-0 hover:rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
+            <div className='bg-white dark:bg-base-900 shadow-md rounded-lg lg:absolute top-1/3 lg:-translate-y-1/3 left-0 hover:rotate-3 w-full p-2 flex flex-col justify-between hover:scale-[105%] transition-all duration-200 gap-2'>
               <div className='flex justify-between'>
                 <div className='flex items-center gap-1'>
                   <div className='text-green-500 bg-green-500/10 rounded-full aspect-square p-2'>
@@ -119,7 +119,7 @@ const AIFeature = () => {
                   <p className='text-sm'>{t('verified')}</p>
                 </div>
               </div>
-              <div className='bg-linear-to-tr from-primary to-pink-100 h-2/3 rounded-md relative'>
+              <div className='rounded-md relative'>
                 <Image
                   src="https://images.unsplash.com/photo-1586436008973-a9ff747dd260?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   width={700}
