@@ -10,11 +10,11 @@ export default function HomePage() {
 
     return (
         <main>
-            {/* <Hero /> */}
-            {/* <Benefits /> */}
+            <Hero />
+            <Benefits />
             <VideoFeature />
             <AIFeature />
-            {/* <Faqs /> */}
+            <Faqs />
         </main>
     );
 }
