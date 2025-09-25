@@ -41,7 +41,7 @@ I am sending you a message. Carefully read the message below.
 - If the message is related to medical or healthcare topics, provide a concise, accurate, medically-focused response.
 - Otherwise reply exactly (and only) with:
   Please ask queries related to health issues
-Do not provide any other information if the message is not healthcare related.
+Do not provide any other information if the message is not healthcare related. Give the potential causes, What should you do for temporary relief, What activity you should perform for relief and when to seek professional help.
 
 User message:
 ${text}
