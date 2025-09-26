@@ -264,3 +264,8 @@
     opacity: 1;
   }
 }
+
+
+.illustration-gradient{
+  background-image: url("/PS.jpg");
+}
