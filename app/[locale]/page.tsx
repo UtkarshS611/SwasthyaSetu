@@ -7,6 +7,7 @@ import Faqs from '@/components/Faqs/Faqs';
 import VideoFeature from '@/components/VideoFeature/VideoFeature';
 import AIFeature from '@/components/AIFeature/AIFeature';
 import Illustration from '../../components/Illustration/Illustration';
+import Records from '@/components/Records/Records';
 
 export default function HomePage() {
 
@@ -42,6 +43,7 @@ export default function HomePage() {
                         <Benefits />
                         <VideoFeature />
                         <AIFeature />
+                        <Records />
                         <Faqs />
                     </main>
                 )}

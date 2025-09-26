@@ -111,10 +111,10 @@
   "Footer": {
     "subHeading": "Your Health Companion App - Track, Manage, and Improve Your Well-being.",
     "company": {
-      "chat":"Chat With AI",
-      "symptoms":"Symptom Check",
-      "video":"Video Consultation",
-      "survey":"Health Survey"
+      "chat": "Chat With AI",
+      "symptoms": "Symptom Check",
+      "video": "Video Consultation",
+      "survey": "Health Survey"
     },
     "legals": {
       "privacy": "Privacy Policy",
@@ -138,7 +138,21 @@
     "audioConsultTitle": "Consult On Audio",
     "audioConsultDesc": "Talk to doctors clearly, even on low networks."
   },
-
+  "Records": {
+    "title": "Personalized Health Surveys",
+    "description": "Gain deeper insights into your well-being—<highlight>quickly complete guided surveys, track lifestyle habits, and receive tailored health recommendations instantly.</highlight>",
+    "cta": "Start Survey",
+    "tryOut": "Try out",
+    "insightsTitle": "Survey & Records",
+    "insightsDescription": "Stay updated with your health records and survey history.",
+    "doctor1": "Dr. Ranjan",
+    "doctor2": "Dr. Ruchi",
+    "verified": "Verified",
+    "videoConsultTitle": "Take a survey",
+    "videoConsultDesc": "Get expert medical advice anytime, anywhere",
+    "audioConsultTitle": "See your records",
+    "audioConsultDesc": "See your latest medical reports here"
+  },
   "AIFeature": {
     "title": "Emergency Situation? AI-Powered Analysis At Your Finger Tips",
     "description": "In critical moments, every second counts. <highlight>Our AI-driven system rapidly analyzes symptoms and vital signs to provide immediate, accurate assessments, ensuring you receive the urgent care you need without delay.</highlight>",
@@ -152,5 +166,6 @@
     "analysisTitle": "On Point Analysis",
     "analysisDesc": "Accurate symptom analysis at your fingertips with medications.",
     "verified": "Verified",
-    "doctorName": "Gemini"}
+    "doctorName": "Gemini"
+  }
 }
