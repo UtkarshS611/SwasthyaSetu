@@ -28,7 +28,7 @@ const Records = () => {
                     })}
                 </p>
                 <Button>
-                    <TransitionLink href="video-conference">{t("cta")}</TransitionLink>
+                    <TransitionLink href="/survey">{t("cta")}</TransitionLink>
                 </Button>
             </div>
 

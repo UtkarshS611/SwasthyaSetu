@@ -28,7 +28,7 @@ const VideoFeature = () => {
           })}
         </p>
         <Button>
-          <TransitionLink href="video-conference">{t("cta")}</TransitionLink>
+          <TransitionLink href="/video-conference">{t("cta")}</TransitionLink>
         </Button>
       </div>
 
