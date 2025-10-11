@@ -11,7 +11,6 @@ export default function HomePage() {
 
     return (
         <main>
-            
             <Hero />
             <Benefits />
             <VideoFeature />
